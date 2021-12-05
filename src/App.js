@@ -11,10 +11,10 @@ const App = () => {
     <Fragment>
       <Header />
       <Flex color='black'>
-        <Center flex='0.5'>
+        <Center flex='0.4'>
           <Profile />
         </Center>
-        <Box flex='0.5'>
+        <Box flex='0.6'>
           <Projects />
         </Box>
       </Flex>

@@ -2,11 +2,11 @@ import { Fragment } from 'react';
 
 const projects = () => {
   return (
-    <Fragment>
-      <section className='profile'>
+    <div>
+      <section className='projects'>
         <h2>What's good</h2>
       </section>
-    </Fragment>
+    </div>
   );
 };
 
