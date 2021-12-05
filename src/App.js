@@ -1,19 +1,21 @@
 import { Fragment } from 'react';
 import Profile from './components/profile';
 import Projects from './components/projects';
+import Header from './components/header';
 import './App.css';
 
-import { Flex, Box } from '@chakra-ui/react';
+import { Flex, Box, Center } from '@chakra-ui/react';
 
 const App = () => {
   return (
     <Fragment>
+      <Header />
       <Flex color='black'>
+        <Center flex='0.5'>
+          <Profile />
+        </Center>
         <Box flex='0.5'>
-          <Profile flex='0.5' />
-        </Box>
-        <Box flex='0.5'>
-          <Projects flex='0.5' />
+          <Projects />
         </Box>
       </Flex>
     </Fragment>
