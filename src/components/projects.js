@@ -1,10 +1,44 @@
 import { Fragment } from 'react';
+import photo from '../images/photo.jpg';
+import { Box } from '@chakra-ui/layout';
+import { Image } from '@chakra-ui/image';
 
 const projects = () => {
   return (
     <div>
       <section className='projects'>
-        <h2>What's good</h2>
+        <Box borderWidth='1px' borderRadius='lg' overflow='hidden' p={4}>
+          <Box display='flex' bg='tomato' p={4} borderRadius='lg'>
+            <Image
+              borderRadius='full'
+              boxSize='90px'
+              src={photo}
+              alt='Hassan Ahmed'
+            />
+            <Box>
+              <h1>To The Person Reading This</h1>
+              <p>
+                Some description of the project, like damn i guess it was cool
+                or something idk, maybe it was, maybe it wasn't.{' '}
+              </p>
+            </Box>
+          </Box>
+          <Box display='flex' bg='tomato' p={4} my={4} borderRadius='lg'>
+            <Image
+              borderRadius='full'
+              boxSize='90px'
+              src={photo}
+              alt='Hassan Ahmed'
+            />
+            <Box>
+              <h1>To The Person Reading This</h1>
+              <p>
+                Some description of the project, like damn i guess it was cool
+                or something idk, maybe it was, maybe it wasn't.{' '}
+              </p>
+            </Box>
+          </Box>
+        </Box>
       </section>
     </div>
   );
