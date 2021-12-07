@@ -8,7 +8,7 @@ const projects = () => {
     <div>
       <section className='projects'>
         <Box borderWidth='1px' borderRadius='lg' overflow='hidden' p={4}>
-          <Box display='flex' bg='#eee' p={4} borderRadius='lg'>
+          <Box display='flex' bg='#f9f9f9' p={4} borderRadius='lg'>
             <Image
               borderRadius='full'
               boxSize='90px'
@@ -23,7 +23,7 @@ const projects = () => {
               </p>
             </Box>
           </Box>
-          <Box display='flex' bg='#eee' p={4} my={4} borderRadius='lg'>
+          <Box display='flex' bg='#f9f9f9' p={4} my={4} borderRadius='lg'>
             <Image
               borderRadius='full'
               boxSize='90px'
