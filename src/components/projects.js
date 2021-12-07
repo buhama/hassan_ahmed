@@ -8,7 +8,7 @@ const projects = () => {
     <div>
       <section className='projects'>
         <Box borderWidth='1px' borderRadius='lg' overflow='hidden' p={4}>
-          <Box display='flex' bg='tomato' p={4} borderRadius='lg'>
+          <Box display='flex' bg='#eee' p={4} borderRadius='lg'>
             <Image
               borderRadius='full'
               boxSize='90px'
@@ -16,14 +16,14 @@ const projects = () => {
               alt='Hassan Ahmed'
             />
             <Box>
-              <h1 className='projectTitle'>To The Person Reading This</h1>
-              <p className='projectName'>
+              <h1 className='project-title'>To The Person Reading This</h1>
+              <p className='project-description'>
                 Some description of the project, like damn i guess it was cool
                 or something idk, maybe it was, maybe it wasn't.{' '}
               </p>
             </Box>
           </Box>
-          <Box display='flex' bg='tomato' p={4} my={4} borderRadius='lg'>
+          <Box display='flex' bg='#eee' p={4} my={4} borderRadius='lg'>
             <Image
               borderRadius='full'
               boxSize='90px'
@@ -31,8 +31,8 @@ const projects = () => {
               alt='Hassan Ahmed'
             />
             <Box>
-              <h1>To The Person Reading This</h1>
-              <p>
+              <h1 className='project-title'>To The Person Reading This</h1>
+              <p className='project-description'>
                 Some description of the project, like damn i guess it was cool
                 or something idk, maybe it was, maybe it wasn't.{' '}
               </p>
