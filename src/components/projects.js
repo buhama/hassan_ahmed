@@ -16,8 +16,8 @@ const projects = () => {
               alt='Hassan Ahmed'
             />
             <Box>
-              <h1>To The Person Reading This</h1>
-              <p>
+              <h1 className='projectTitle'>To The Person Reading This</h1>
+              <p className='projectName'>
                 Some description of the project, like damn i guess it was cool
                 or something idk, maybe it was, maybe it wasn't.{' '}
               </p>
