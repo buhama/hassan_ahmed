@@ -36,14 +36,25 @@
   font-size: 1.5rem;
 }
 
+.main {
+  padding: 0 3rem;
+}
+
 .profile {
   padding: 0 6vw;
   top: 11vw;
   position: fixed;
 }
 
+@media screen and (max-width: 765px) {
+  .profile {
+    position: relative;
+  }
+}
+
 .projects-box {
   margin-top: 120px;
+  margin-right: 120px;
 }
 
 .project {

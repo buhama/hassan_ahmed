@@ -31,7 +31,7 @@ const projects = () => {
             </div>
           </TabPanel>
           <TabPanel>
-            <p>two!</p>
+            <p>software!</p>
           </TabPanel>
         </TabPanels>
       </Tabs>
