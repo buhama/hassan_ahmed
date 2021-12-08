@@ -27,10 +27,6 @@
   margin-top: 120px;
 }
 
-.projects {
-  overflow: hidden;
-}
-
 ::-webkit-scrollbar {
   display: none;
 }
