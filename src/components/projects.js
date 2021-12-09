@@ -12,28 +12,31 @@ const projects = () => {
       borderRadius='lg'
       p={4}
       mx={6}
-      className='projects-box'
+      className='projects-main'
     >
       <div className='projects-header'>
         <h1>Cool Projects and Blog Pieces</h1>
       </div>
+
       <Tabs variant='enclosed'>
         <TabList>
           <Tab>All</Tab>
           <Tab>Software Projects</Tab>
         </TabList>
-        <TabPanels>
-          <TabPanel>
-            <div className='projects'>
-              <div className='project'>
-                <Project />
+        <Box className='projects-box'>
+          <TabPanels>
+            <TabPanel>
+              <div className='projects'>
+                <div className='project'>
+                  <Project />
+                </div>
               </div>
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <p>software!</p>
-          </TabPanel>
-        </TabPanels>
+            </TabPanel>
+            <TabPanel>
+              <p>software!</p>
+            </TabPanel>
+          </TabPanels>
+        </Box>
       </Tabs>
     </Box>
   );

@@ -26,6 +26,16 @@
   position: fixed;
 }
 
+.footer {
+  width: 100%;
+  margin-top: 2.8vh;
+  /* padding: 2.8vw; */
+  position: relative;
+  bottom: 0;
+
+  background-color: orange;
+}
+
 .nav-links {
   padding-right: 2.8vw;
 }
@@ -53,12 +63,21 @@
 }
 
 .projects-box {
+  /* margin-top: 120px;
+  margin-right: 120px; */
+  height: 55vh;
+  overflow: auto;
+  /* background-color: orange; */
+}
+
+.projects-main {
   margin-top: 120px;
   margin-right: 120px;
+  /*height: 90vh; */
 }
 
 .project {
-  overflow: auto;
+  /* overflow: auto; */
   height: 90vh;
 }
 
