@@ -18,14 +18,6 @@ const App = () => {
   return (
     <Fragment>
       <Header />
-      {/* <SimpleGrid columns={[1, 1, 2]} spacing={5}>
-        <Center>
-          <Profile />
-        </Center>
-        <Box>
-          <Projects />
-        </Box>
-      </SimpleGrid> */}
       <Grid templateColumns='repeat(10, 1fr)' gap={1} className='main'>
         <GridItem colSpan={{ base: 10, md: 4, lg: 4 }}>
           <Center>
@@ -38,26 +30,6 @@ const App = () => {
           </Box>
         </GridItem>
       </Grid>
-      {/* <Flex color='black'>
-        <Center
-          flex={{
-            base: null,
-            md: null,
-            xl: null,
-          }}
-        >
-          <Profile />
-        </Center>
-        <Box
-          flex={{
-            base: null,
-            md: null,
-            xl: null,
-          }}
-        >
-          <Projects />
-        </Box>
-      </Flex> */}
       <Footer />
     </Fragment>
   );
