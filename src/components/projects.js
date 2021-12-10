@@ -7,6 +7,9 @@ import Project from './Project';
 import projects from '../data';
 
 const Projects = () => {
+  const softwareItems = projects.filter(
+    (project) => project.category === 'Software'
+  );
   return (
     <Box
       borderWidth='1px'
@@ -37,7 +40,9 @@ const Projects = () => {
               </div>
             </TabPanel>
             <TabPanel>
-              <p>software!</p>
+              {softwareItems.map((project) => (
+                <Project key={project.id} project={project} />
+              ))}
             </TabPanel>
           </TabPanels>
         </Box>
