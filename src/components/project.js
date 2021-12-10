@@ -1,9 +1,11 @@
-import { Fragment } from 'react';
+import React, { useState, Fragment } from 'react';
 import { Box } from '@chakra-ui/layout';
 import { Image } from '@chakra-ui/image';
-import photo from '../images/photo.jpg';
+import projects from '../data';
 
-const project = () => {
+const Project = () => {
+  const [index, setIndex] = useState(0);
+  const { name, description, photo } = projects[index];
   return (
     <Fragment>
       {' '}
@@ -86,4 +88,4 @@ const project = () => {
   );
 };
 
-export default project;
+export default Project;

@@ -3,7 +3,7 @@ import photo from '../images/photo.jpg';
 import { Box } from '@chakra-ui/layout';
 import { Image } from '@chakra-ui/image';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
-import Project from './project';
+import Project from './Project';
 
 const projects = () => {
   return (
@@ -21,7 +21,7 @@ const projects = () => {
       <Tabs variant='enclosed'>
         <TabList>
           <Tab>All</Tab>
-          <Tab>Software Projects</Tab>
+          <Tab>Software</Tab>
         </TabList>
         <Box className='projects-box'>
           <TabPanels>
