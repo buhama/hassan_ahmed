@@ -1,11 +1,12 @@
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 import photo from '../images/photo.jpg';
 import { Box } from '@chakra-ui/layout';
 import { Image } from '@chakra-ui/image';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 import Project from './Project';
+import projects from '../data';
 
-const projects = () => {
+const Projects = () => {
   return (
     <Box
       borderWidth='1px'
@@ -28,7 +29,10 @@ const projects = () => {
             <TabPanel>
               <div className='projects'>
                 <div className='project'>
-                  <Project />
+                  {projects.map((project) => (
+                    <Project key={project.id} project={project} />
+                  ))}
+                  {/* <Project /> */}
                 </div>
               </div>
             </TabPanel>
@@ -42,4 +46,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;

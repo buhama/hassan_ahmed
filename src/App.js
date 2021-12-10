@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import Profile from './components/profile';
-import Projects from './components/projects';
+import Projects from './components/Projects';
 import Header from './components/header';
 import Footer from './components/footer';
 import './App.css';
