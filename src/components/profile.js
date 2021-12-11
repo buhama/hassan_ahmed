@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { Image } from '@chakra-ui/image';
 import photo from '../images/photo.jpg';
-import { Center } from '@chakra-ui/layout';
+import { Center } from '@chakra-ui/react';
 
 const profile = () => {
   return (

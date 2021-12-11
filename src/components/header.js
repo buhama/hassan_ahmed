@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { Center, Flex, Link, Spacer } from '@chakra-ui/layout';
+import { Center, Flex, Link, Spacer } from '@chakra-ui/react';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
 import { Button } from '@chakra-ui/button';
 
@@ -19,6 +19,14 @@ const header = () => {
             size='sm'
           >
             Contact{' '}
+          </Button>
+          <Button
+            rightIcon={<ArrowForwardIcon />}
+            colorScheme='blue'
+            variant='solid'
+            size='sm'
+          >
+            Change Theme
           </Button>
         </div>
       </Flex>

@@ -1,5 +1,5 @@
 import React, { useState, Fragment } from 'react';
-import { Box } from '@chakra-ui/layout';
+import { Box } from '@chakra-ui/react';
 import { Image } from '@chakra-ui/image';
 import projects from '../data';
 

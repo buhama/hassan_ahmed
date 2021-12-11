@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { Center, Flex, Link, Spacer } from '@chakra-ui/layout';
+import { Center, Flex, Link, Spacer } from '@chakra-ui/react';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
 import { Button } from '@chakra-ui/button';
 import { IconButton, SimpleGrid } from '@chakra-ui/react';
