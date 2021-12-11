@@ -1,22 +1,11 @@
-import { Fragment } from 'react';
 import Profile from './components/profile';
 import Projects from './components/Projects';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-import { ChakraProvider } from '@chakra-ui/react';
-import theme from './theme';
+import { ChakraProvider, Box, Center, Grid, GridItem } from '@chakra-ui/react';
 
 import './App.css';
-
-import {
-  Flex,
-  Box,
-  Center,
-  Grid,
-  GridItem,
-  SimpleGrid,
-} from '@chakra-ui/react';
 
 const App = () => {
   return (

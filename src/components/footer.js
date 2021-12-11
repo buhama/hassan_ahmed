@@ -1,14 +1,4 @@
-import { Fragment } from 'react';
-import {
-  Center,
-  Flex,
-  Link,
-  Spacer,
-  Box,
-  useColorModeValue,
-} from '@chakra-ui/react';
-import { ArrowForwardIcon } from '@chakra-ui/icons';
-import { Button } from '@chakra-ui/button';
+import { Link, Box, useColorModeValue } from '@chakra-ui/react';
 import { IconButton, SimpleGrid } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
