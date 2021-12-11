@@ -1,9 +1,11 @@
 import { Fragment } from 'react';
-import { Center, Flex, Link, Spacer } from '@chakra-ui/react';
-import { ArrowForwardIcon } from '@chakra-ui/icons';
+import { Center, Flex, Link, Spacer, useColorMode } from '@chakra-ui/react';
+import { ArrowForwardIcon, SunIcon } from '@chakra-ui/icons';
 import { Button } from '@chakra-ui/button';
 
-const header = () => {
+const Header = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <div className='header'>
       <Flex>
@@ -17,12 +19,14 @@ const header = () => {
             colorScheme='blue'
             variant='solid'
             size='sm'
+            mr='4'
           >
             Contact{' '}
           </Button>
           <Button
-            rightIcon={<ArrowForwardIcon />}
-            colorScheme='blue'
+            onClick={toggleColorMode}
+            rightIcon={<SunIcon />}
+            colorScheme='gray'
             variant='solid'
             size='sm'
           >
@@ -34,4 +38,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;
