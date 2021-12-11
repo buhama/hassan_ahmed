@@ -1,7 +1,4 @@
-import { Fragment, useState } from 'react';
-import photo from '../images/photo.jpg';
 import { Box } from '@chakra-ui/react';
-import { Image } from '@chakra-ui/image';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 import Project from './Project';
 import projects from '../data';

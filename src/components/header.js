@@ -1,5 +1,4 @@
-import { Fragment } from 'react';
-import { Center, Flex, Link, Spacer, useColorMode } from '@chakra-ui/react';
+import { Flex, Link, Spacer, useColorMode } from '@chakra-ui/react';
 import { ArrowForwardIcon, SunIcon } from '@chakra-ui/icons';
 import { Button } from '@chakra-ui/button';
 

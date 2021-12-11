@@ -1,13 +1,9 @@
 import React, { useState, Fragment } from 'react';
 import { Box, useColorModeValue } from '@chakra-ui/react';
 import { Image } from '@chakra-ui/image';
-import projects from '../data';
 
 const Project = ({ project }) => {
-  const [index, setIndex] = useState(0);
   const bg = useColorModeValue('gray.100', 'gray.900');
-  const color = useColorModeValue('black', 'white');
-  // const { name, description, photo } = projects[index];
   return (
     <Fragment>
       {' '}
