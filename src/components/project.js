@@ -13,7 +13,7 @@ const Project = ({ project }) => {
   if (project.external) {
     return (
       <Fragment>
-        <Link href={project.link} isExternal>
+        <Link href={project.link} isExternal style={{ textDecoration: 'none' }}>
           <Box
             className='project-box'
             display='flex'
@@ -39,7 +39,11 @@ const Project = ({ project }) => {
   } else {
     return (
       <Fragment>
-        <Link as={RouterLink} to={project.link}>
+        <Link
+          as={RouterLink}
+          to={project.link}
+          style={{ textDecoration: 'none' }}
+        >
           <Box
             className='project-box'
             display='flex'
