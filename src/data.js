@@ -1,13 +1,14 @@
 import { FaKaaba } from 'react-icons/fa';
 import photo from './images/photo.jpg';
+import tothepersonreadingthis from './images/project_logos/tothepersonreadingthis.png';
 
 const projects = [
   {
     id: 8,
     name: 'To The Person Reading This',
     description:
-      'A small investigation on how my team and I hosted a successful online event by breaking it down to its base value to attendees.  ',
-    picture: photo,
+      'Mental health related website which accepts encouraging words and displays them under 4 categories and allows admin to manage submissions via a dashboard. Made using HTML, CSS, JavaScript and PHP. ',
+    picture: tothepersonreadingthis,
     category: 'Software',
     link: 'https://tothepersonreadingthis.com/',
     external: true,
