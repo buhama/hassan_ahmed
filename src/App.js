@@ -1,8 +1,8 @@
-import Profile from './components/profile';
-import Projects from './components/Projects';
 import Main from './components/Main';
 import Header from './components/Header';
 import Footer from './components/Footer';
+
+import ScrollToTop from './react-hooks/ScrollToTop';
 
 import To_The_Person_Reading_This from './projects/To_The_Person_Reading_This';
 import How_The_Pandemic_Forced_Event_Innovation from './projects/How_The_Pandemic_Forced_Event_Innovation';
@@ -17,6 +17,7 @@ const App = () => {
   return (
     <ChakraProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path='/' element={<Main />} />
