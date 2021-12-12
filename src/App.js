@@ -4,9 +4,11 @@ import Main from './components/Main';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-import { ChakraProvider, Box, Center, Grid, GridItem } from '@chakra-ui/react';
+import To_The_Person_Reading_This from './projects/To_The_Person_Reading_This';
 
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { ChakraProvider } from '@chakra-ui/react';
+
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import './App.css';
 
@@ -17,6 +19,11 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Main />} />
+          <Route
+            exact
+            path='/projects/To_The_Person_Reading_This'
+            render={() => (window.location = 'https://redirectsite.com')}
+          />
         </Routes>
       </BrowserRouter>
       <Footer />

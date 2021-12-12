@@ -1,3 +1,4 @@
+import { FaKaaba } from 'react-icons/fa';
 import photo from './images/photo.jpg';
 
 const projects = [
@@ -8,7 +9,8 @@ const projects = [
       'A small investigation on how my team and I hosted a successful online event by breaking it down to its base value to attendees.  ',
     picture: photo,
     category: 'Software',
-    link: '../projects/To_The_Person_Reading_This',
+    link: '/projects/To_The_Person_Reading_This',
+    external: true,
   },
   {
     id: 1,
@@ -18,6 +20,7 @@ const projects = [
     picture: photo,
     category: 'Blog',
     link: '/',
+    external: false,
   },
   {
     id: 2,
@@ -26,6 +29,7 @@ const projects = [
     picture: photo,
     category: 'Software',
     link: '/',
+    external: false,
   },
   {
     id: 3,
@@ -35,6 +39,7 @@ const projects = [
     picture: photo,
     category: 'Software',
     link: '/',
+    external: false,
   },
   {
     id: 4,
@@ -44,6 +49,7 @@ const projects = [
     picture: photo,
     category: 'CAD',
     link: '/',
+    external: false,
   },
   {
     id: 5,
@@ -53,6 +59,7 @@ const projects = [
     picture: photo,
     category: 'Software',
     link: '/',
+    external: false,
   },
   {
     id: 6,
@@ -62,6 +69,7 @@ const projects = [
     picture: photo,
     category: 'CAD',
     link: '/',
+    external: false,
   },
   {
     id: 7,
@@ -71,6 +79,7 @@ const projects = [
     picture: photo,
     category: 'CAD',
     link: '/',
+    external: false,
   },
 ];
 
