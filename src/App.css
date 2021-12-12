@@ -77,9 +77,13 @@
   /* background-color: orange; */
 }
 
-/* .project-box:hover {
-  background-color: red;
-} */
+.project-box {
+  transition: transform 0.2s;
+}
+
+.project-box:hover {
+  transform: scale(1.05);
+}
 
 .projects-main {
   margin-top: 18vh;
@@ -126,4 +130,16 @@
 .project-description {
   font-family: 'Roboto Condensed', sans-serif;
   padding: 0 1rem;
+}
+
+.blog {
+  margin-top: 18vh;
+  padding: 0 15vw;
+  top: 11vw;
+}
+
+.blog-title h1 {
+  font-size: 50px;
+  line-height: 95%;
+  padding: 2vw 0;
 }

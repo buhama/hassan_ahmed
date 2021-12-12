@@ -1,6 +1,7 @@
 import { FaKaaba } from 'react-icons/fa';
 import photo from './images/photo.jpg';
 import tothepersonreadingthis from './images/project_logos/tothepersonreadingthis.png';
+import slatrophy from './images/project_logos/slatrophy.png';
 
 const projects = [
   {
@@ -17,10 +18,10 @@ const projects = [
     id: 1,
     name: 'How The Pandemic Forced Event Innovation',
     description:
-      'A small investigation on how my team and I hosted a successful online event by breaking it down to its base value to attendees.  ',
-    picture: photo,
+      'A small investigation on how my team and I hosted a successful online awards show event by breaking it down to its base value to attendees.  ',
+    picture: slatrophy,
     category: 'Blog',
-    link: '/',
+    link: '/projects/How_The_Pandemic_Forced_Event_Innovation',
     external: false,
   },
   {
