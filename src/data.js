@@ -8,7 +8,7 @@ const projects = [
     id: 8,
     name: 'To The Person Reading This',
     description:
-      'Mental health related website which accepts encouraging words and displays them under 4 categories and allows admin to manage submissions via a dashboard. Made using HTML, CSS, JavaScript and PHP. ',
+      'Mental health related website which accepts encouraging words and displays them under 4 categories and allows admin to manage submissions via a dashboard. Made using HTML, CSS, JavaScript, PHP and SQL. ',
     picture: tothepersonreadingthis,
     category: 'Software',
     link: 'https://tothepersonreadingthis.com/',
