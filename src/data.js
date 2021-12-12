@@ -9,7 +9,7 @@ const projects = [
       'A small investigation on how my team and I hosted a successful online event by breaking it down to its base value to attendees.  ',
     picture: photo,
     category: 'Software',
-    link: '/projects/To_The_Person_Reading_This',
+    link: 'https://tothepersonreadingthis.com/',
     external: true,
   },
   {
