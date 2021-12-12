@@ -58,6 +58,7 @@ const How_The_Pandemic_Forced_Event_Innovation = () => {
           table or for students to hit up a table on their way to class. Things
           that weren’t easily made possible online.
         </p>
+        <br />
         <h2>Award Shows</h2>
         <br />
         <p>
@@ -87,6 +88,7 @@ const How_The_Pandemic_Forced_Event_Innovation = () => {
           off-the-cuff acceptance speeches as they do their best to hold back
           their excitement.
         </p>
+        <br />
         <h2>The Student Life Awards 2021 (SLA2021)</h2>
         <br />
         <p>

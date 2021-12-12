@@ -16,8 +16,8 @@ import './App.css';
 const App = () => {
   return (
     <ChakraProvider>
-      <Header />
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path='/' element={<Main />} />
           <Route

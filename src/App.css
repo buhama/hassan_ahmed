@@ -143,3 +143,8 @@
   line-height: 95%;
   padding: 2vw 0;
 }
+
+.blog h2 {
+  font-size: 25px;
+  font-weight: bold;
+}

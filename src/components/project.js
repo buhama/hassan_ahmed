@@ -1,12 +1,7 @@
 import React, { useState, Fragment } from 'react';
 import { Box, useColorModeValue, Link } from '@chakra-ui/react';
 import { Image } from '@chakra-ui/image';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link as RouterLink,
-} from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
 
 const Project = ({ project }) => {
   const bg = useColorModeValue('gray.100', 'gray.900');
