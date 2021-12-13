@@ -1,6 +1,15 @@
+import { Button, Link } from '@chakra-ui/react';
+import { ArrowBackIcon } from '@chakra-ui/icons';
+import { Link as RouterLink } from 'react-router-dom';
+
 const How_The_Pandemic_Forced_Event_Innovation = () => {
   return (
     <div className='blog'>
+      <Link as={RouterLink} to='/' style={{ textDecoration: 'none' }}>
+        <Button leftIcon={<ArrowBackIcon />} colorScheme='blue' variant='solid'>
+          Go Back Home
+        </Button>
+      </Link>
       <div className='blog-title'>
         <h1>How The Pandemic Forced Event Innovation</h1>
       </div>
