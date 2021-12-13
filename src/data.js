@@ -2,6 +2,7 @@ import { FaKaaba } from 'react-icons/fa';
 import photo from './images/photo.jpg';
 import tothepersonreadingthis from './images/project_logos/tothepersonreadingthis.png';
 import slatrophy from './images/project_logos/slatrophy.png';
+import cvuologo from './images/project_logos/cvuoclubsportal.png';
 
 const projects = [
   {
@@ -28,9 +29,9 @@ const projects = [
     id: 2,
     name: 'CVUO Clubs Portal',
     description: 'The details and motivations behind the CVUO Clubs Portal.',
-    picture: photo,
+    picture: cvuologo,
     category: 'Software',
-    link: '/',
+    link: '/projects/CVUO_Clubs_Portal',
     external: false,
   },
   {
