@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed');
 
+*:focus {
+  box-shadow: none !important;
+  /* This is to remove the blue outline that comes with Chakra UI, 
+  but it's not good for accessibility, but it's so ugly so what we gonna do 🤷‍♂️.  */
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -21,9 +27,14 @@
 
 .header {
   width: 100%;
-  padding: 2.8vw;
+  margin-bottom: 2.8vw;
+  padding-top: 2.8vw;
+  padding-right: 2.8vw;
+  padding-left: 2.8vw;
+  padding-bottom: 0.5vw;
   top: 0;
   position: fixed;
+  backdrop-filter: blur(3px);
 }
 
 .footer {
