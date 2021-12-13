@@ -31,7 +31,7 @@ const projects = [
     name: 'CVUO Clubs Portal',
     description: 'The details and motivations behind the CVUO Clubs Portal.',
     picture: cvuologo,
-    category: 'Software',
+    category: 'Blog',
     link: '/projects/CVUO_Clubs_Portal',
     external: false,
   },

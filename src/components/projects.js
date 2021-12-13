@@ -8,6 +8,9 @@ const Projects = () => {
     (project) => project.category === 'Software'
   );
 
+  const cadItems = projects.filter((project) => project.category === 'CAD');
+  const blogItems = projects.filter((project) => project.category === 'Blog');
+
   return (
     <Box
       borderWidth='1px'
@@ -22,18 +25,24 @@ const Projects = () => {
 
       <Tabs variant='enclosed'>
         <TabList>
-          <Tab>All</Tab>
           <Tab>Software</Tab>
+          <Tab>CAD</Tab>
+          <Tab>Blog</Tab>
         </TabList>
         <Box className='projects-box'>
           <TabPanels>
             <TabPanel>
-              {projects.map((project) => (
+              {softwareItems.map((project) => (
                 <Project key={project.id} project={project} />
               ))}
             </TabPanel>
             <TabPanel>
-              {softwareItems.map((project) => (
+              {cadItems.map((project) => (
+                <Project key={project.id} project={project} />
+              ))}
+            </TabPanel>
+            <TabPanel>
+              {blogItems.map((project) => (
                 <Project key={project.id} project={project} />
               ))}
             </TabPanel>
