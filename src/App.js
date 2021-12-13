@@ -13,6 +13,7 @@ import How_The_Pandemic_Forced_Event_Innovation from './projects/How_The_Pandemi
 import CVUO_Clubs_Portal from './projects/CVUO_Clubs_Portal';
 import CyberMonke from './projects/CyberMonke';
 import Submarine from './projects/Submarine';
+import Graphic_Design from './projects/Graphic_Design';
 
 import './App.css';
 
@@ -39,6 +40,7 @@ const App = () => {
           />
           <Route path='/projects/CyberMonke' element={<CyberMonke />} />
           <Route path='/projects/Submarine' element={<Submarine />} />
+          <Route path='/projects/Graphic_Design' element={<Graphic_Design />} />
         </Routes>
       </BrowserRouter>
       <Footer />

@@ -7,6 +7,24 @@ import lifeinweeks from './images/project_logos/lifeinweeks.jpg';
 
 const projects = [
   {
+    id: 10,
+    name: 'Graphic Design',
+    description: 'All my graphic design work. Usually for social media.',
+    picture: tothepersonreadingthis,
+    category: 'Design',
+    link: '/projects/Graphic_Design',
+    external: false,
+  },
+  {
+    id: 9,
+    name: 'Web Design',
+    description: 'All my website design work.',
+    picture: tothepersonreadingthis,
+    category: 'Design',
+    link: 'https://tothepersonreadingthis.com/',
+    external: false,
+  },
+  {
     id: 8,
     name: 'To The Person Reading This',
     description:
