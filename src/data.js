@@ -3,13 +3,15 @@ import photo from './images/photo.jpg';
 import tothepersonreadingthis from './images/project_logos/tothepersonreadingthis.png';
 import slatrophy from './images/project_logos/slatrophy.png';
 import cvuologo from './images/project_logos/cvuoclubsportal.png';
+import cherami from './images/project_logos/cherami.jpg';
+import lifeinweeks from './images/project_logos/lifeinweeks.jpg';
 
 const projects = [
   {
     id: 8,
     name: 'To The Person Reading This',
     description:
-      'Mental health related website which accepts encouraging words and displays them under 4 categories and allows admin to manage submissions via a dashboard. Made using HTML, CSS, JavaScript, PHP and SQL. ',
+      'Mental health related website which accepts encouraging words, displays them under 4 categories and allows admin to manage submissions via a dashboard. Made using HTML, CSS, JavaScript, PHP and SQL. ',
     picture: tothepersonreadingthis,
     category: 'Software',
     link: 'https://tothepersonreadingthis.com/',
@@ -36,13 +38,13 @@ const projects = [
   },
   {
     id: 3,
-    name: 'Twitter Memories Bot',
+    name: 'Twitter Memories Bot (Cher Ami)',
     description:
       'Python Twitter bot that finds and sends tweet memories via personal messages. ',
-    picture: photo,
+    picture: cherami,
     category: 'Software',
-    link: '/',
-    external: false,
+    link: 'https://twitter.com/memoriesbot_',
+    external: true,
   },
   {
     id: 4,
@@ -59,10 +61,10 @@ const projects = [
     name: '“Life in Weeks” Twitter Bot',
     description:
       'Extremely morbid responsive Python Twitter bot, visualizing users’  life on an infographic.',
-    picture: photo,
+    picture: lifeinweeks,
     category: 'Software',
     link: '/',
-    external: false,
+    external: true,
   },
   {
     id: 6,
