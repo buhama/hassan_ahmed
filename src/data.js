@@ -72,17 +72,7 @@ const projects = [
       'A submarine that is cost-efficient, maintains safety and performance but is also able to dive to various depths past 330 m at 6 knots. ',
     picture: photo,
     category: 'CAD',
-    link: '/',
-    external: false,
-  },
-  {
-    id: 7,
-    name: 'All-Purpose Mouse for Individuals with Minimal Dexterity',
-    description:
-      'A custom-built computer mouse for a user with limited dexterity and arm movement. ',
-    picture: photo,
-    category: 'CAD',
-    link: '/',
+    link: '/projects/Submarine',
     external: false,
   },
 ];

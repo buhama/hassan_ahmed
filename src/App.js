@@ -4,14 +4,15 @@ import Footer from './components/Footer';
 
 import ScrollToTop from './react-hooks/ScrollToTop';
 
+import { ChakraProvider } from '@chakra-ui/react';
+
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+
 import To_The_Person_Reading_This from './projects/To_The_Person_Reading_This';
 import How_The_Pandemic_Forced_Event_Innovation from './projects/How_The_Pandemic_Forced_Event_Innovation';
 import CVUO_Clubs_Portal from './projects/CVUO_Clubs_Portal';
 import CyberMonke from './projects/CyberMonke';
-
-import { ChakraProvider } from '@chakra-ui/react';
-
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Submarine from './projects/Submarine';
 
 import './App.css';
 
@@ -37,6 +38,7 @@ const App = () => {
             element={<CVUO_Clubs_Portal />}
           />
           <Route path='/projects/CyberMonke' element={<CyberMonke />} />
+          <Route path='/projects/Submarine' element={<Submarine />} />
         </Routes>
       </BrowserRouter>
       <Footer />
