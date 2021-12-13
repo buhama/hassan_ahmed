@@ -85,6 +85,7 @@
   margin-right: 120px; */
   height: 57vh;
   overflow: auto;
+  overflow-x: hidden;
   /* background-color: orange; */
 }
 
@@ -93,21 +94,14 @@
 }
 
 .project-box:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
 .projects-main {
   margin-top: 18vh;
   margin-bottom: 6vh;
-  /* margin-bottom: 60px; */
   margin-right: 120px;
-  /* position: relative; */
-  /*height: 90vh; */
 }
-
-/* .project {
-  height: 90vh;
-} */
 
 .projects-header {
   overflow: hidden;
@@ -167,4 +161,8 @@
 
 .blog a:hover {
   text-decoration: underline;
+}
+
+.blog ul {
+  padding-left: 40px;
 }

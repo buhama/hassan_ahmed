@@ -7,6 +7,7 @@ import ScrollToTop from './react-hooks/ScrollToTop';
 import To_The_Person_Reading_This from './projects/To_The_Person_Reading_This';
 import How_The_Pandemic_Forced_Event_Innovation from './projects/How_The_Pandemic_Forced_Event_Innovation';
 import CVUO_Clubs_Portal from './projects/CVUO_Clubs_Portal';
+import CyberMonke from './projects/CyberMonke';
 
 import { ChakraProvider } from '@chakra-ui/react';
 
@@ -35,6 +36,7 @@ const App = () => {
             path='/projects/CVUO_Clubs_Portal'
             element={<CVUO_Clubs_Portal />}
           />
+          <Route path='/projects/CyberMonke' element={<CyberMonke />} />
         </Routes>
       </BrowserRouter>
       <Footer />

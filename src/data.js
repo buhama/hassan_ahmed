@@ -1,4 +1,3 @@
-import { FaKaaba } from 'react-icons/fa';
 import photo from './images/photo.jpg';
 import tothepersonreadingthis from './images/project_logos/tothepersonreadingthis.png';
 import slatrophy from './images/project_logos/slatrophy.png';
@@ -53,7 +52,7 @@ const projects = [
       'A unique exoskeleton design for users all users, that enhances strength, is lightweight, accessible to users with physical disabilities &  cost efficient. Done for the IBM Design Challenge at the uOttawa Designathon. ',
     picture: photo,
     category: 'CAD',
-    link: '/',
+    link: '/projects/CyberMonke',
     external: false,
   },
   {
@@ -63,7 +62,7 @@ const projects = [
       'Extremely morbid responsive Python Twitter bot, visualizing users’  life on an infographic.',
     picture: lifeinweeks,
     category: 'Software',
-    link: '/',
+    link: 'https://twitter.com/lifeinweeks_bot',
     external: true,
   },
   {
