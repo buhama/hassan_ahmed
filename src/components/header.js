@@ -6,7 +6,7 @@ import {
   useColorMode,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { ArrowForwardIcon, SunIcon } from '@chakra-ui/icons';
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { Button } from '@chakra-ui/button';
 import { IconButton, SimpleGrid } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
@@ -19,6 +19,13 @@ const Header = () => {
   const twitterColor = useColorModeValue('blue', 'blue');
   const githubColor = useColorModeValue('green', 'red');
   const linkedinColor = useColorModeValue('red', 'purple');
+  var buttonText = 'Dark Mode';
+
+  if (colorMode === 'dark') {
+    buttonText = 'Light Mode';
+  } else {
+    buttonText = 'Dark Mode';
+  }
 
   return (
     <div className='header'>
@@ -60,12 +67,12 @@ const Header = () => {
           </Link>
           <Button
             onClick={toggleColorMode}
-            rightIcon={<SunIcon />}
+            rightIcon={colorMode === 'dark' ? <SunIcon /> : <MoonIcon />}
             colorScheme={buttonColor}
             variant='solid'
             size='sm'
           >
-            Change Theme
+            {buttonText}
           </Button>
         </div>
       </Flex>
