@@ -62,8 +62,11 @@ const Graphic_Design = () => {
   ];
 
   return (
-    <div className='blog'>
-      <SimpleGrid minChildWidth='220px' spacing={1}>
+    <div className='design-blog'>
+      <SimpleGrid
+        minChildWidth={{ base: '50vw', md: '27vw', lg: '27vw' }}
+        spacing={1}
+      >
         {images.map((img) => (
           <Image src={img} />
         ))}
