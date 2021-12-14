@@ -6,13 +6,15 @@ import cherami from './images/project_logos/cherami.jpg';
 import lifeinweeks from './images/project_logos/lifeinweeks.jpg';
 import cybermonke from './images/project_logos/cybermonke.png';
 import submarine from './images/project_logos/submarine.png';
+import graphicdesign from './images/project_logos/graphicdesign.png';
+import webdesign from './images/project_logos/webdesign.jpeg';
 
 const projects = [
   {
     id: 10,
     name: 'Graphic Design',
     description: 'All my graphic design work. Usually for social media.',
-    picture: tothepersonreadingthis,
+    picture: graphicdesign,
     category: 'Design',
     link: '/projects/Graphic_Design',
     external: false,
@@ -21,7 +23,7 @@ const projects = [
     id: 9,
     name: 'Web Design',
     description: 'All my website design work.',
-    picture: tothepersonreadingthis,
+    picture: webdesign,
     category: 'Design',
     link: '/projects/Web_Design',
     external: false,
