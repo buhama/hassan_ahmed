@@ -21,7 +21,7 @@ const projects = [
     description: 'All my website design work.',
     picture: tothepersonreadingthis,
     category: 'Design',
-    link: 'https://tothepersonreadingthis.com/',
+    link: '/projects/Web_Design',
     external: false,
   },
   {
