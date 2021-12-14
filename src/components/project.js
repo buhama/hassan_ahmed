@@ -5,6 +5,8 @@ import { Link as RouterLink } from 'react-router-dom';
 
 const Project = ({ project }) => {
   const bg = useColorModeValue('gray.50', 'gray.900');
+  const headerColor = useColorModeValue('purple.800', '#E0FABD');
+
   if (project.external) {
     return (
       <Fragment>
@@ -24,7 +26,9 @@ const Project = ({ project }) => {
               alt={project.name}
             />
             <Box>
-              <h1 className='project-title'>{project.name}</h1>
+              <Box color={headerColor}>
+                <h1 className='project-title'>{project.name}</h1>
+              </Box>
               <p className='project-description'>{project.description}</p>
             </Box>
           </Box>
@@ -54,7 +58,9 @@ const Project = ({ project }) => {
               alt={project.name}
             />
             <Box>
-              <h1 className='project-title'>{project.name}</h1>
+              <Box color={headerColor}>
+                <h1 className='project-title'>{project.name}</h1>
+              </Box>
               <p className='project-description'>{project.description}</p>
             </Box>
           </Box>

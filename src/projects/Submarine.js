@@ -1,12 +1,18 @@
-import { Button, Link } from '@chakra-ui/react';
+import { Button, Link, useColorModeValue } from '@chakra-ui/react';
 import { ArrowBackIcon } from '@chakra-ui/icons';
 import { Link as RouterLink } from 'react-router-dom';
 
 const Submarine = () => {
+  const buttonColor = useColorModeValue('purple', 'green');
+
   return (
     <div className='blog'>
       <Link as={RouterLink} to='/' style={{ textDecoration: 'none' }}>
-        <Button leftIcon={<ArrowBackIcon />} colorScheme='blue' variant='solid'>
+        <Button
+          leftIcon={<ArrowBackIcon />}
+          colorScheme={buttonColor}
+          variant='solid'
+        >
           Go Back Home
         </Button>
       </Link>

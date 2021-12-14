@@ -1,4 +1,4 @@
-import Profile from './profile';
+import Profile from './Profile';
 import Projects from './Projects';
 
 import { ChakraProvider, Box, Center, Grid, GridItem } from '@chakra-ui/react';

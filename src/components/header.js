@@ -15,6 +15,10 @@ import { Link as RouterLink } from 'react-router-dom';
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
+  const buttonColor = useColorModeValue('purple', 'green');
+  const twitterColor = useColorModeValue('blue', 'blue');
+  const githubColor = useColorModeValue('green', 'red');
+  const linkedinColor = useColorModeValue('red', 'purple');
 
   return (
     <div className='header'>
@@ -26,18 +30,10 @@ const Header = () => {
         </div>
         <Spacer />
         <div className='nav-links'>
-          {/* <Button
-            rightIcon={<ArrowForwardIcon />}
-            colorScheme='blue'
-            variant='solid'
-            size='sm'
-            mr='4'
-          > 
-            Contact{' '}
-          </Button>*/}
           <Link href='https://github.com/buhama' isExternal pr={2}>
             <IconButton
               size='sm'
+              colorScheme={githubColor}
               aria-label='Github Link'
               icon={<FaGithub />}
             />
@@ -45,6 +41,7 @@ const Header = () => {
           <Link href='https://twitter.com/hassanahmed_ca' isExternal pr={2}>
             <IconButton
               size='sm'
+              colorScheme={twitterColor}
               aria-label='Twitter Link'
               icon={<FaTwitter />}
             />
@@ -56,6 +53,7 @@ const Header = () => {
           >
             <IconButton
               size='sm'
+              colorScheme={linkedinColor}
               aria-label='LinkedIn Link'
               icon={<FaLinkedin />}
             />
@@ -63,7 +61,7 @@ const Header = () => {
           <Button
             onClick={toggleColorMode}
             rightIcon={<SunIcon />}
-            colorScheme='gray'
+            colorScheme={buttonColor}
             variant='solid'
             size='sm'
           >

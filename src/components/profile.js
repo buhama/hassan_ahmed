@@ -1,8 +1,10 @@
 import { Image } from '@chakra-ui/image';
 import photo from '../images/photo.jpg';
-import { Center } from '@chakra-ui/react';
+import { Center, useColorModeValue, Box } from '@chakra-ui/react';
 
-const profile = () => {
+const Profile = () => {
+  const headerColor = useColorModeValue('purple.800', '#E0FABD');
+
   return (
     <div className='profile'>
       <div className='main-image'>
@@ -16,14 +18,18 @@ const profile = () => {
         </Center>
       </div>
       <div className='main-title'>
-        <h1>Hassan Ahmed</h1>
-        <p>
-          Looking to create solutions, solve problems, maybe make something &
-          have fun : )
-        </p>
+        <Box color={headerColor}>
+          <h1>HASSAN AHMED</h1>
+        </Box>
+        <i>
+          <p>
+            Looking to create solutions, solve problems, maybe make something &
+            have fun : )
+          </p>
+        </i>
       </div>
     </div>
   );
 };
 
-export default profile;
+export default Profile;
