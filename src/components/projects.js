@@ -26,7 +26,7 @@ const Projects = () => {
         <h1>Cool Projects and Blog Pieces</h1>
       </div>
 
-      <Tabs variant='enclosed'>
+      <Tabs isFitted variant='enclosed' colorScheme='purple'>
         <TabList>
           <Tab>Software</Tab>
           <Tab>CAD</Tab>
