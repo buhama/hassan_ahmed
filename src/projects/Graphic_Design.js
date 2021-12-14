@@ -15,7 +15,17 @@ import img13 from '../images/graphic_design/clubs+fair.jpg';
 import img14 from '../images/graphic_design/first+schedule.png';
 import img15 from '../images/graphic_design/messy+frost.png';
 import img16 from '../images/graphic_design/steamfest.png';
-import img17 from '../images/graphic_design/UOTTAWA+CLUBS+FAIR+v1.0.png';
+import img17 from '../images/graphic_design/wellness_week/0.jpg';
+import img18 from '../images/graphic_design/wellness_week/1.jpg';
+import img19 from '../images/graphic_design/wellness_week/2.jpg';
+import img20 from '../images/graphic_design/wellness_week/3.jpg';
+import img21 from '../images/graphic_design/wellness_week/4.jpg';
+import img22 from '../images/graphic_design/wellness_week/5.jpg';
+import img23 from '../images/graphic_design/wellness_week/6.jpg';
+import img24 from '../images/graphic_design/wellness_week/7.jpg';
+import img25 from '../images/graphic_design/wellness_week/8.jpg';
+import img26 from '../images/graphic_design/wellness_week/9.jpg';
+import img27 from '../images/graphic_design/wellness_week/9.jpg';
 
 import { Component } from 'react';
 import Lightbox from 'react-image-lightbox';
@@ -23,6 +33,15 @@ import 'react-image-lightbox/style.css'; //
 
 const Graphic_Design = () => {
   var images = [
+    img17,
+    img18,
+    img19,
+    img20,
+    img21,
+    img22,
+    img23,
+    img24,
+    img25,
     img1,
     img3,
     img4,
@@ -44,7 +63,7 @@ const Graphic_Design = () => {
 
   return (
     <div className='blog'>
-      <SimpleGrid minChildWidth='220px' spacing={2}>
+      <SimpleGrid minChildWidth='220px' spacing={1}>
         {images.map((img) => (
           <Image src={img} />
         ))}
