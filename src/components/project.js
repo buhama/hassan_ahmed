@@ -4,7 +4,7 @@ import { Image } from '@chakra-ui/image';
 import { Link as RouterLink } from 'react-router-dom';
 
 const Project = ({ project }) => {
-  const bg = useColorModeValue('gray.100', 'gray.900');
+  const bg = useColorModeValue('gray.50', 'gray.900');
   if (project.external) {
     return (
       <Fragment>

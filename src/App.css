@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 *:focus {
   box-shadow: none !important;
@@ -23,6 +23,23 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #909090;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'PT Serif', serif;
+}
+
+p {
+  font-family: 'Abel', sans-serif;
+  text-align: justify;
+}
+
+li {
+  font-family: 'Abel', sans-serif;
+  text-align: justify;
 }
 
 .header {
@@ -60,7 +77,6 @@
 }
 
 .logo {
-  font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -107,34 +123,29 @@
 .projects-header {
   overflow: hidden;
   /* position: absolute; */
-  font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
   padding-bottom: 1rem;
 }
 
 .main-title h1 {
-  font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
   text-align: center;
 }
 
 .main-title p {
-  font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
 }
 
 .project-title {
-  font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.5rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: bold;
   padding: 0 1rem;
 }
 
 .project-description {
-  font-family: 'Roboto Condensed', sans-serif;
   padding: 0 1rem;
 }
 
