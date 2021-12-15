@@ -2,9 +2,13 @@ import { Image } from '@chakra-ui/image';
 import photo from '../images/photo.jpg';
 import { Center, useColorModeValue, Box } from '@chakra-ui/react';
 
-const Profile = () => {
+const Profile = ({ selectedTab }) => {
   const headerColor = useColorModeValue('purple.800', '#E0FABD');
-
+  if (selectedTab === 0) {
+    console.log('hellow');
+  } else {
+    // console.log(selectedTab);
+  }
   return (
     <div className='profile'>
       <div className='main-image'>
@@ -19,6 +23,7 @@ const Profile = () => {
       </div>
       <div className='main-title'>
         <Box color={headerColor}>
+          <h1>{selectedTab}</h1>
           <h1>HASSAN AHMED</h1>
         </Box>
         <i>

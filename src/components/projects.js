@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Box } from '@chakra-ui/react';
 import {
   Tabs,
@@ -10,7 +11,7 @@ import {
 import Project from './Project';
 import projects from '../data';
 
-const Projects = () => {
+const Projects = ({ setSelectedTab }) => {
   const softwareItems = projects.filter(
     (project) => project.category === 'Software'
   );
@@ -22,6 +23,12 @@ const Projects = () => {
 
   const headerColor = useColorModeValue('purple.800', '#E0FABD');
   const tabColor = useColorModeValue('purple', 'green');
+  const [tabIndex, setTabIndex] = useState(0);
+
+  const onChange = (index) => {
+    setTabIndex(index);
+    setSelectedTab(index);
+  };
 
   return (
     <Box
@@ -37,7 +44,12 @@ const Projects = () => {
         </div>
       </Box>
 
-      <Tabs isFitted variant='enclosed' colorScheme={tabColor}>
+      <Tabs
+        onChange={(index) => onChange(index)}
+        isFitted
+        variant='enclosed'
+        colorScheme={tabColor}
+      >
         <TabList>
           <Tab>Software</Tab>
           <Tab>CAD</Tab>
@@ -47,11 +59,13 @@ const Projects = () => {
         <Box className='projects-box'>
           <TabPanels>
             <TabPanel>
+              <h1>{tabIndex}</h1>
               {softwareItems.map((project) => (
                 <Project key={project.id} project={project} />
               ))}
             </TabPanel>
             <TabPanel>
+              <h1>{tabIndex}</h1>
               {cadItems.map((project) => (
                 <Project key={project.id} project={project} />
               ))}
