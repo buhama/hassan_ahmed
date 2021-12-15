@@ -10,7 +10,6 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import './App.css';
 
-import To_The_Person_Reading_This from './projects/To_The_Person_Reading_This';
 import How_The_Pandemic_Forced_Event_Innovation from './projects/How_The_Pandemic_Forced_Event_Innovation';
 import CVUO_Clubs_Portal from './projects/CVUO_Clubs_Portal';
 import CyberMonke from './projects/CyberMonke';

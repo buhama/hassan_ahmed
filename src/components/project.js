@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { Box, useColorModeValue, Link } from '@chakra-ui/react';
 import { Image } from '@chakra-ui/image';
 import { Link as RouterLink } from 'react-router-dom';

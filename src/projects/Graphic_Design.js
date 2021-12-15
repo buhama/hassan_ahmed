@@ -1,4 +1,4 @@
-import { SimpleGrid, Image, Wrap, WrapItem, Center } from '@chakra-ui/react';
+import { SimpleGrid, Image } from '@chakra-ui/react';
 import img1 from '../images/graphic_design/1_1.png';
 import img2 from '../images/graphic_design/1.png';
 import img3 from '../images/graphic_design/2.png';
@@ -24,12 +24,6 @@ import img22 from '../images/graphic_design/wellness_week/5.jpg';
 import img23 from '../images/graphic_design/wellness_week/6.jpg';
 import img24 from '../images/graphic_design/wellness_week/7.jpg';
 import img25 from '../images/graphic_design/wellness_week/8.jpg';
-import img26 from '../images/graphic_design/wellness_week/9.jpg';
-import img27 from '../images/graphic_design/wellness_week/9.jpg';
-
-import { Component } from 'react';
-import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css'; //
 
 const Graphic_Design = () => {
   var images = [

@@ -1,5 +1,4 @@
 import {
-  Box,
   Flex,
   Link,
   Spacer,
@@ -8,7 +7,7 @@ import {
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { Button } from '@chakra-ui/button';
-import { IconButton, SimpleGrid } from '@chakra-ui/react';
+import { IconButton } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 import { Link as RouterLink } from 'react-router-dom';

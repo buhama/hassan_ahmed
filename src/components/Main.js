@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Profile from './Profile';
 import Projects from './Projects';
 
-import { ChakraProvider, Box, Center, Grid, GridItem } from '@chakra-ui/react';
+import { Box, Center, Grid, GridItem } from '@chakra-ui/react';
 
 const Main = () => {
   const [selectedTab, setSelectedTab] = useState(0);

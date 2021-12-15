@@ -1,4 +1,3 @@
-import photo from './images/photo.jpg';
 import tothepersonreadingthis from './images/project_logos/tothepersonreadingthis.png';
 import slatrophy from './images/project_logos/slatrophy.png';
 import cvuologo from './images/project_logos/cvuoclubsportal.png';

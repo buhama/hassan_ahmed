@@ -1,11 +1,4 @@
-import {
-  SimpleGrid,
-  Image,
-  Wrap,
-  WrapItem,
-  Center,
-  Link,
-} from '@chakra-ui/react';
+import { SimpleGrid, Image, Link } from '@chakra-ui/react';
 import img1 from '../images/web_design/1.png';
 import img2 from '../images/web_design/2.png';
 import img4 from '../images/web_design/4.png';
@@ -13,10 +6,6 @@ import img5 from '../images/web_design/5.png';
 import img7 from '../images/web_design/cvuo.png';
 import img8 from '../images/web_design/ruby.png';
 import img9 from '../images/web_design/thatmakergirl.png';
-
-import { Component } from 'react';
-import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css'; //
 
 const Web_Design = () => {
   var images = [

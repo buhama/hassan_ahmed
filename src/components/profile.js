@@ -1,12 +1,6 @@
 import { Image } from '@chakra-ui/image';
 import photo from '../images/photo.jpg';
-import {
-  Center,
-  useColorModeValue,
-  Box,
-  Button,
-  SimpleGrid,
-} from '@chakra-ui/react';
+import { Center, useColorModeValue, Box, SimpleGrid } from '@chakra-ui/react';
 
 import toolsData from '../tools_data';
 import ToolsButton from './ToolsButton';
