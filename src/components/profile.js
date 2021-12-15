@@ -14,12 +14,23 @@ import ToolsButton from './ToolsButton';
 const Profile = ({ selectedTab }) => {
   const headerColor = useColorModeValue('purple.800', '#E0FABD');
 
-  const softwareItems = toolsData.filter(
-    (tool) => tool.category === 'Software'
-  );
-  const cadItems = toolsData.filter((tool) => tool.category === 'CAD');
-  const blogItems = toolsData.filter((tool) => tool.category === 'Blog');
-  const designItems = toolsData.filter((tool) => tool.category === 'Design');
+  // const softwareItems = toolsData.filter(
+  //   (tool) => tool.category === 'Software'
+  // );
+  // const cadItems = toolsData.filter((tool) => tool.category === 'CAD');
+  // const blogItems = toolsData.filter((tool) => tool.category === 'Blog');
+  // const designItems = toolsData.filter((tool) => tool.category === 'Design');
+  var items;
+
+  if (selectedTab === 0) {
+    items = toolsData.filter((tool) => tool.category === 'Software');
+  } else if (selectedTab === 1) {
+    items = toolsData.filter((tool) => tool.category === 'CAD');
+  } else if (selectedTab === 2) {
+    items = toolsData.filter((tool) => tool.category === 'Blog');
+  } else if (selectedTab === 3) {
+    items = toolsData.filter((tool) => tool.category === 'Design');
+  }
 
   if (selectedTab === 0) {
     console.log('hellow');
@@ -55,7 +66,7 @@ const Profile = ({ selectedTab }) => {
         </Center>
         <Center p={2}>
           <SimpleGrid columns={[2, 4, 3]} spacing={1}>
-            {softwareItems.map((tool) => (
+            {items.map((tool) => (
               <ToolsButton key={tool.id} name={tool.name} />
             ))}
           </SimpleGrid>
