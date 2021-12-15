@@ -32,11 +32,6 @@ const Profile = ({ selectedTab }) => {
     items = toolsData.filter((tool) => tool.category === 'Design');
   }
 
-  if (selectedTab === 0) {
-    console.log('hellow');
-  } else {
-    // console.log(selectedTab);
-  }
   return (
     <div className='profile'>
       <div className='main-image'>
@@ -64,7 +59,7 @@ const Profile = ({ selectedTab }) => {
         <Center pt={3}>
           <h1 style={{ fontSize: '25px' }}>TOOLS</h1>
         </Center>
-        <Center p={2}>
+        <Center py={2}>
           <SimpleGrid columns={[2, 4, 3]} spacing={1}>
             {items.map((tool) => (
               <ToolsButton key={tool.id} name={tool.name} />
