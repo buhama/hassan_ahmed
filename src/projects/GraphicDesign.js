@@ -62,9 +62,9 @@ const GraphicDesign = () => {
         spacing={1}
       >
         <Image src={img16} />
-        {images.map((img) => (
+        {/* {images.map((img) => (
           <Image src={img} />
-        ))}
+        ))} */}
       </SimpleGrid>
     </div>
   );
