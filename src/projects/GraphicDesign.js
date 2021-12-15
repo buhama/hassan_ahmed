@@ -1,4 +1,4 @@
-import { SimpleGrid, Image } from '@chakra-ui/react';
+import { SimpleGrid } from '@chakra-ui/react';
 import { Image } from '@chakra-ui/image';
 // import img1 from '../images/graphic_design/1_1.png';
 // import img2 from '../images/graphic_design/1.png';
