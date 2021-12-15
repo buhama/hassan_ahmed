@@ -14,7 +14,7 @@ import HowThePandemicForcedEventInnovation from './projects/How_The_Pandemic_For
 import CVUOClubsPortal from './projects/CVUO_Clubs_Portal';
 import CyberMonke from './projects/CyberMonke';
 import Submarine from './projects/Submarine';
-import GraphicDesign from './projects/Graphic_Design';
+import GraphicDesign from './projects/GraphicDesign';
 import WebDesign from './projects/Web_Design';
 
 const App = () => {

@@ -25,7 +25,7 @@ import img23 from '../images/graphic_design/wellness_week/6.jpg';
 import img24 from '../images/graphic_design/wellness_week/7.jpg';
 import img25 from '../images/graphic_design/wellness_week/8.jpg';
 
-const Graphic_Design = () => {
+const GraphicDesign = () => {
   var images = [
     img17,
     img18,
@@ -70,4 +70,4 @@ const Graphic_Design = () => {
   );
 };
 
-export default Graphic_Design;
+export default GraphicDesign;
