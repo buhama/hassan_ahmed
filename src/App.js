@@ -6,16 +6,16 @@ import ScrollToTop from './react-hooks/ScrollToTop';
 
 import { ChakraProvider } from '@chakra-ui/react';
 
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './App.css';
 
-import How_The_Pandemic_Forced_Event_Innovation from './projects/How_The_Pandemic_Forced_Event_Innovation';
-import CVUO_Clubs_Portal from './projects/CVUO_Clubs_Portal';
+import HowThePandemicForcedEventInnovation from './projects/How_The_Pandemic_Forced_Event_Innovation';
+import CVUOClubsPortal from './projects/CVUO_Clubs_Portal';
 import CyberMonke from './projects/CyberMonke';
 import Submarine from './projects/Submarine';
-import Graphic_Design from './projects/Graphic_Design';
-import Web_Design from './projects/Web_Design';
+import GraphicDesign from './projects/Graphic_Design';
+import WebDesign from './projects/Web_Design';
 
 const App = () => {
   return (
@@ -32,16 +32,16 @@ const App = () => {
           />
           <Route
             path='/projects/How_The_Pandemic_Forced_Event_Innovation'
-            element={<How_The_Pandemic_Forced_Event_Innovation />}
+            element={<HowThePandemicForcedEventInnovation />}
           />
           <Route
             path='/projects/CVUO_Clubs_Portal'
-            element={<CVUO_Clubs_Portal />}
+            element={<CVUOClubsPortal />}
           />
           <Route path='/projects/CyberMonke' element={<CyberMonke />} />
           <Route path='/projects/Submarine' element={<Submarine />} />
-          <Route path='/projects/Graphic_Design' element={<Graphic_Design />} />
-          <Route path='/projects/Web_Design' element={<Web_Design />} />
+          <Route path='/projects/Graphic_Design' element={<GraphicDesign />} />
+          <Route path='/projects/Web_Design' element={<WebDesign />} />
         </Routes>
       </BrowserRouter>
       <Footer />

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Box } from '@chakra-ui/react';
 import {
   Tabs,
@@ -23,10 +22,8 @@ const Projects = ({ setSelectedTab }) => {
 
   const headerColor = useColorModeValue('purple.800', '#E0FABD');
   const tabColor = useColorModeValue('purple', 'green');
-  const [tabIndex, setTabIndex] = useState(0);
 
   const onChange = (index) => {
-    setTabIndex(index);
     setSelectedTab(index);
   };
 
