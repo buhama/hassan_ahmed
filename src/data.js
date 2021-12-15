@@ -15,7 +15,7 @@ const projects = [
     description: 'All my graphic design work. Usually for social media.',
     picture: graphicdesign,
     category: 'Design',
-    link: '/projects/Graphic_Design',
+    link: '/projects/GraphicDesign',
     external: false,
   },
   {
