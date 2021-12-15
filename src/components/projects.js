@@ -59,13 +59,11 @@ const Projects = ({ setSelectedTab }) => {
         <Box className='projects-box'>
           <TabPanels>
             <TabPanel>
-              <h1>{tabIndex}</h1>
               {softwareItems.map((project) => (
                 <Project key={project.id} project={project} />
               ))}
             </TabPanel>
             <TabPanel>
-              <h1>{tabIndex}</h1>
               {cadItems.map((project) => (
                 <Project key={project.id} project={project} />
               ))}

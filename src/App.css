@@ -89,7 +89,8 @@ li {
 .profile {
   padding: 0 6vw;
   top: 11vw;
-  position: fixed;
+  margin-top: 22vh;
+  /* position: fixed; */
 }
 
 @media screen and (max-width: 765px) {
