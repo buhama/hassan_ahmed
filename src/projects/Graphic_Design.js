@@ -61,6 +61,7 @@ const Graphic_Design = () => {
         minChildWidth={{ base: '50vw', md: '27vw', lg: '27vw' }}
         spacing={1}
       >
+        <Image src={img16} />
         {images.map((img) => (
           <Image src={img} />
         ))}
