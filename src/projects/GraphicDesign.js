@@ -59,6 +59,12 @@ const GraphicDesign = () => {
 
   return (
     <div className='design-blog'>
+      <Image
+        borderRadius='full'
+        boxSize='200px'
+        src={img16}
+        alt='Hassan Ahmed'
+      />
       <SimpleGrid
         minChildWidth={{ base: '50vw', md: '27vw', lg: '27vw' }}
         spacing={1}
