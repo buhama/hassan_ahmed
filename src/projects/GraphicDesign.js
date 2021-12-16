@@ -63,7 +63,12 @@ const GraphicDesign = () => {
         minChildWidth={{ base: '50vw', md: '27vw', lg: '27vw' }}
         spacing={1}
       >
-        <Image src={img16} />
+        <Image
+          borderRadius='full'
+          boxSize='200px'
+          src={img16}
+          alt='Hassan Ahmed'
+        />
         {/* {images.map((img) => (
           <Image src={img} />
         ))} */}
