@@ -16,7 +16,7 @@ import { Image } from '@chakra-ui/image';
 // import img14 from '../images/graphic_design/first+schedule.png';
 // import img15 from '../images/graphic_design/messy+frost.png';
 // import img16 from '../images/graphic_design/steamfest.png';
-import img16 from '../images/photo.jpg';
+import photo from '../images/photo.jpg';
 // import img17 from '../images/graphic_design/wellness_week/0.jpg';
 // import img18 from '../images/graphic_design/wellness_week/1.jpg';
 // import img19 from '../images/graphic_design/wellness_week/2.jpg';
@@ -59,12 +59,7 @@ const GraphicDesign = () => {
 
   return (
     <div className='design-blog'>
-      <Image
-        borderRadius='full'
-        boxSize='200px'
-        src={img16}
-        alt='Hassan Ahmed'
-      />
+      <Image borderRadius='full' boxSize='200px' src={photo} alt='blah Ahmed' />
       <SimpleGrid
         minChildWidth={{ base: '50vw', md: '27vw', lg: '27vw' }}
         spacing={1}
@@ -72,7 +67,7 @@ const GraphicDesign = () => {
         <Image
           borderRadius='full'
           boxSize='200px'
-          src={img16}
+          src={photo}
           alt='Hassan Ahmed'
         />
         {/* {images.map((img) => (
