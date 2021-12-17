@@ -10,12 +10,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './App.css';
 
-// import HowThePandemicForcedEventInnovation from './projects/How_The_Pandemic_Forced_Event_Innovation';
-// import CVUOClubsPortal from './projects/CVUO_Clubs_Portal';
+import HowThePandemicForcedEventInnovation from './projects/How-The-Pandemic-Forced-Event-Innovation';
+import CVUOClubsPortal from './projects/CVUO-Clubs-Portal';
 import CyberMonke from './projects/CyberMonke';
 import Submarine from './projects/Submarine';
 import GraphicDesign from './projects/GraphicDesign';
-// import WebDesign from './projects/Web_Design';
+import WebDesign from './projects/WebDesign';
 
 const App = () => {
   return (
@@ -25,18 +25,18 @@ const App = () => {
         <Header />
         <Routes>
           <Route path='/' element={<Main />} />
-          {/* <Route
-            path='/projects/How_The_Pandemic_Forced_Event_Innovation'
+          <Route
+            path='/projects/How-The-Pandemic-Forced-Event-Innovation'
             element={<HowThePandemicForcedEventInnovation />}
           />
           <Route
-            path='/projects/CVUO_Clubs_Portal'
+            path='/projects/CVUO-Clubs-Portal'
             element={<CVUOClubsPortal />}
-          /> */}
+          />
           <Route path='/projects/CyberMonke' element={<CyberMonke />} />
           <Route path='/projects/Submarine' element={<Submarine />} />
           <Route path='/projects/GraphicDesign' element={<GraphicDesign />} />
-          {/* <Route path='/projects/Web_Design' element={<WebDesign />} /> */}
+          <Route path='/projects/WebDesign' element={<WebDesign />} />
         </Routes>
       </BrowserRouter>
       <Footer />

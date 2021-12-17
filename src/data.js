@@ -1,12 +1,12 @@
-import tothepersonreadingthis from './images/project_logos/tothepersonreadingthis.png';
-// import slatrophy from './images/project_logos/slatrophy.png';
-// import cvuologo from './images/project_logos/cvuoclubsportal.png';
-import cherami from './images/project_logos/cherami.jpg';
-import lifeinweeks from './images/project_logos/lifeinweeks.jpg';
-import cybermonke from './images/project_logos/cybermonke.png';
-import submarine from './images/project_logos/submarine.png';
-import graphicdesign from './images/project_logos/graphicdesign.png';
-// import webdesign from './images/project_logos/webdesign.jpeg';
+import tothepersonreadingthis from './images/project-logos';
+import slatrophy from './images/project-logos/slatrophy.png';
+import cvuologo from './images/project-logos/cvuoclubsportal.png';
+import cherami from './images/project-logos/cherami.jpg';
+import lifeinweeks from './images/project-logos/lifeinweeks.jpg';
+import cybermonke from './images/project-logos/cybermonke.png';
+import submarine from './images/project-logos/submarine.png';
+import graphicdesign from './images/project-logos/graphicdesign.png';
+import webdesign from './images/project-logos/webdesign.jpeg';
 
 const projects = [
   {
@@ -18,15 +18,15 @@ const projects = [
     link: '/projects/GraphicDesign',
     external: false,
   },
-  // {
-  //   id: 9,
-  //   name: 'Web Design',
-  //   description: 'All my website design work.',
-  //   picture: webdesign,
-  //   category: 'Design',
-  //   link: '/projects/Web_Design',
-  //   external: false,
-  // },
+  {
+    id: 9,
+    name: 'Web Design',
+    description: 'All my website design work.',
+    picture: webdesign,
+    category: 'Design',
+    link: '/projects/WebDesign',
+    external: false,
+  },
   {
     id: 8,
     name: 'To The Person Reading This',
@@ -37,25 +37,25 @@ const projects = [
     link: 'https://tothepersonreadingthis.com/',
     external: true,
   },
-  // {
-  //   id: 1,
-  //   name: 'How The Pandemic Forced Event Innovation',
-  //   description:
-  //     'A small investigation on how my team and I hosted a successful online awards show event by breaking it down to its base value to attendees.  ',
-  //   picture: slatrophy,
-  //   category: 'Blog',
-  //   link: '/projects/How_The_Pandemic_Forced_Event_Innovation',
-  //   external: false,
-  // },
-  // {
-  //   id: 2,
-  //   name: 'CVUO Clubs Portal',
-  //   description: 'The details and motivations behind the CVUO Clubs Portal.',
-  //   picture: cvuologo,
-  //   category: 'Blog',
-  //   link: '/projects/CVUO_Clubs_Portal',
-  //   external: false,
-  // },
+  {
+    id: 1,
+    name: 'How The Pandemic Forced Event Innovation',
+    description:
+      'A small investigation on how my team and I hosted a successful online awards show event by breaking it down to its base value to attendees.  ',
+    picture: slatrophy,
+    category: 'Blog',
+    link: '/projects/How-The-Pandemic-Forced-Event-Innovation',
+    external: false,
+  },
+  {
+    id: 2,
+    name: 'CVUO Clubs Portal',
+    description: 'The details and motivations behind the CVUO Clubs Portal.',
+    picture: cvuologo,
+    category: 'Blog',
+    link: '/projects/CVUO-Clubs-Portal',
+    external: false,
+  },
   {
     id: 3,
     name: 'Twitter Memories Bot (Cher Ami)',
