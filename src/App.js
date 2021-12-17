@@ -26,11 +26,6 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Main />} />
           <Route
-            exact
-            path='/projects/To_The_Person_Reading_This'
-            render={() => (window.location = 'https://redirectsite.com')}
-          />
-          <Route
             path='/projects/How_The_Pandemic_Forced_Event_Innovation'
             element={<HowThePandemicForcedEventInnovation />}
           />
