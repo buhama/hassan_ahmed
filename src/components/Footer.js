@@ -21,6 +21,7 @@ const Footer = () => {
                     aria-label='Github Link'
                     colorScheme={githubColor}
                     icon={<FaGithub />}
+                    size='sm'
                   />
                 </Link>
                 <Link href='https://twitter.com/hassanahmed_ca' isExternal>
@@ -28,6 +29,7 @@ const Footer = () => {
                     aria-label='Twitter Link'
                     colorScheme={twitterColor}
                     icon={<FaTwitter />}
+                    size='sm'
                   />
                 </Link>
                 <Link
@@ -38,6 +40,7 @@ const Footer = () => {
                     aria-label='LinkedIn Link'
                     colorScheme={linkedinColor}
                     icon={<FaLinkedin />}
+                    size='sm'
                   />
                 </Link>
               </SimpleGrid>
