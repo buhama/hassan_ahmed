@@ -17,7 +17,7 @@ const CVUO_Clubs_Portal = () => {
         </Button>
       </Link>
       <div className='blog-title'>
-        <h1>CyberMonkE - IBM Design Challenge</h1>
+        <h1>CVUO Clubs Portal</h1>
       </div>
       <div className='blog-body'>
         {/* TODO: Add Blog Images */}{' '}
