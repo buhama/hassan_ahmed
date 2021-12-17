@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+* {
+  z-index: 0;
+}
 *:focus {
   box-shadow: none !important;
   /* This is to remove the blue outline that comes with Chakra UI, 
@@ -52,6 +54,25 @@ li {
   top: 0;
   position: fixed;
   backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+@media screen and (max-width: 765px) {
+  .header {
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .color-button-text {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 765px) {
+  .color-button-icon {
+    display: none;
+  }
 }
 
 .footer {
@@ -77,6 +98,21 @@ li {
   /* background-color: orange; */
 }
 
+@media screen and (max-width: 765px) {
+  /* .nav-socials {
+    display: none;
+  } */
+  .github-header {
+    display: none;
+  }
+  .twitter-header {
+    display: none;
+  }
+  .linkedin-header {
+    display: none;
+  }
+}
+
 .logo {
   font-weight: bold;
   font-size: 1.5rem;
@@ -84,6 +120,12 @@ li {
 
 .main {
   padding: 0 3rem;
+}
+
+@media screen and (max-width: 765px) {
+  .main {
+    padding: 0 0;
+  }
 }
 
 .profile {
@@ -106,6 +148,12 @@ li {
   overflow: auto;
   overflow-x: hidden;
   /* background-color: orange; */
+}
+
+@media screen and (max-width: 765px) {
+  .projects-box {
+    height: 100%;
+  }
 }
 
 .project-box {
@@ -147,6 +195,12 @@ li {
   padding: 0 1rem;
 }
 
+@media screen and (max-width: 765px) {
+  .projects-main p {
+    text-align: left;
+  }
+}
+
 .project-description {
   padding: 0 1rem;
 }
@@ -163,19 +217,25 @@ li {
   top: 11vw;
 }
 
+@media screen and (max-width: 765px) {
+  .blog {
+    padding: 0 7vw;
+  }
+}
+
 .blog-title h1 {
-  font-size: 50px;
+  font-size: 2.5rem;
   line-height: 95%;
   padding: 2vw 0;
 }
 
 .blog h2 {
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .blog h3 {
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: bold;
 }
 

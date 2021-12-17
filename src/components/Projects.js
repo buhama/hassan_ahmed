@@ -29,10 +29,10 @@ const Projects = ({ setSelectedTab }) => {
 
   return (
     <Box
-      borderWidth='1px'
+      borderWidth={{ base: '0px', md: '1px', lg: '1px' }}
       borderRadius='lg'
       p={4}
-      mx={6}
+      mx={{ base: 0, md: 6, lg: 6 }}
       className='projects-main'
     >
       <Box color={headerColor}>
