@@ -1,4 +1,4 @@
-import tothepersonreadingthis from './images/project-logos';
+import tothepersonreadingthis from './images/project-logos/tothepersonreadingthis.png';
 import slatrophy from './images/project-logos/slatrophy.png';
 import cvuologo from './images/project-logos/cvuoclubsportal.png';
 import cherami from './images/project-logos/cherami.jpg';
