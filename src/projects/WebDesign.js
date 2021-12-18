@@ -1,11 +1,11 @@
 import { SimpleGrid, Image, Link } from '@chakra-ui/react';
-import img1 from '../images/web-design/1.png';
-import img2 from '../images/web-design/2.png';
-import img4 from '../images/web-design/4.png';
-import img5 from '../images/web-design/5.png';
-import img7 from '../images/web-design/cvuo.png';
-import img8 from '../images/web-design/ruby.png';
-import img9 from '../images/web-design/thatmakergirl.png';
+import img1 from '../images/web-design/1.jpg';
+import img2 from '../images/web-design/2.jpg';
+import img4 from '../images/web-design/4.jpg';
+import img5 from '../images/web-design/5.jpg';
+import img7 from '../images/web-design/cvuo.jpg';
+import img8 from '../images/web-design/ruby.jpg';
+import img9 from '../images/web-design/thatmakergirl.jpg';
 
 const Web_Design = () => {
   var images = [
@@ -44,7 +44,7 @@ const Web_Design = () => {
       <SimpleGrid minChildWidth='420px' spacing={2}>
         {images.map((image) => (
           <Link href={image.link} isExternal>
-            <Image src={image.img} />
+            <Image loading='lazy' src={image.img} />
           </Link>
         ))}
       </SimpleGrid>
