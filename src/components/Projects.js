@@ -10,6 +10,8 @@ import {
 import Project from './Project';
 import projects from '../data';
 
+import FadeIn from 'react-fade-in/lib/FadeIn';
+
 const Projects = ({ setSelectedTab }) => {
   const softwareItems = projects.filter(
     (project) => project.category === 'Software'
@@ -35,49 +37,51 @@ const Projects = ({ setSelectedTab }) => {
       mx={{ base: 0, md: 6, lg: 6 }}
       className='projects-main'
     >
-      <Box color={headerColor}>
-        <div className='projects-header'>
-          <h1>Cool Projects and Blog Pieces</h1>
-        </div>
-      </Box>
-
-      <Tabs
-        onChange={(index) => onChange(index)}
-        isFitted
-        variant='enclosed'
-        colorScheme={tabColor}
-      >
-        <TabList>
-          <Tab>Software</Tab>
-          <Tab>CAD</Tab>
-          <Tab>Blog</Tab>
-          <Tab>Design</Tab>
-        </TabList>
-        <Box className='projects-box'>
-          <TabPanels>
-            <TabPanel>
-              {softwareItems.map((project) => (
-                <Project key={project.id} project={project} />
-              ))}
-            </TabPanel>
-            <TabPanel>
-              {cadItems.map((project) => (
-                <Project key={project.id} project={project} />
-              ))}
-            </TabPanel>
-            <TabPanel>
-              {blogItems.map((project) => (
-                <Project key={project.id} project={project} />
-              ))}
-            </TabPanel>
-            <TabPanel>
-              {designItems.map((project) => (
-                <Project key={project.id} project={project} />
-              ))}
-            </TabPanel>
-          </TabPanels>
+      <FadeIn>
+        <Box color={headerColor}>
+          <div className='projects-header'>
+            <h1>Cool Projects and Blog Pieces</h1>
+          </div>
         </Box>
-      </Tabs>
+
+        <Tabs
+          onChange={(index) => onChange(index)}
+          isFitted
+          variant='enclosed'
+          colorScheme={tabColor}
+        >
+          <TabList>
+            <Tab>Software</Tab>
+            <Tab>CAD</Tab>
+            <Tab>Blog</Tab>
+            <Tab>Design</Tab>
+          </TabList>
+          <Box className='projects-box'>
+            <TabPanels>
+              <TabPanel>
+                {softwareItems.map((project) => (
+                  <Project key={project.id} project={project} />
+                ))}
+              </TabPanel>
+              <TabPanel>
+                {cadItems.map((project) => (
+                  <Project key={project.id} project={project} />
+                ))}
+              </TabPanel>
+              <TabPanel>
+                {blogItems.map((project) => (
+                  <Project key={project.id} project={project} />
+                ))}
+              </TabPanel>
+              <TabPanel>
+                {designItems.map((project) => (
+                  <Project key={project.id} project={project} />
+                ))}
+              </TabPanel>
+            </TabPanels>
+          </Box>
+        </Tabs>
+      </FadeIn>
     </Box>
   );
 };

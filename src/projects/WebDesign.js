@@ -1,4 +1,5 @@
 import { SimpleGrid, Image, Link } from '@chakra-ui/react';
+import FadeIn from 'react-fade-in/lib/FadeIn';
 import img1 from '../images/web-design/1.jpg';
 import img2 from '../images/web-design/2.jpg';
 import img4 from '../images/web-design/4.jpg';
@@ -43,9 +44,11 @@ const Web_Design = () => {
     <div className='design-blog'>
       <SimpleGrid minChildWidth='420px' spacing={2}>
         {images.map((image) => (
-          <Link href={image.link} isExternal>
-            <Image loading='lazy' src={image.img} />
-          </Link>
+          <FadeIn>
+            <Link href={image.link} isExternal>
+              <Image loading='lazy' src={image.img} />
+            </Link>
+          </FadeIn>
         ))}
       </SimpleGrid>
     </div>

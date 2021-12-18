@@ -3,6 +3,8 @@ import { Box, useColorModeValue, Link } from '@chakra-ui/react';
 import { Image } from '@chakra-ui/image';
 import { Link as RouterLink } from 'react-router-dom';
 
+import FadeIn from 'react-fade-in/lib/FadeIn';
+
 const Project = ({ project }) => {
   const bg = useColorModeValue('gray.50', 'gray.900');
   const headerColor = useColorModeValue('purple.800', '#E0FABD');
@@ -10,61 +12,69 @@ const Project = ({ project }) => {
   if (project.external) {
     return (
       <Fragment>
-        <Link href={project.link} isExternal style={{ textDecoration: 'none' }}>
-          <Box
-            className='project-box'
-            display='flex'
-            bg={bg}
-            p={4}
-            my={4}
-            borderRadius='lg'
+        <FadeIn>
+          <Link
+            href={project.link}
+            isExternal
+            style={{ textDecoration: 'none' }}
           >
-            <Image
-              borderRadius='full'
-              boxSize='90px'
-              src={project.picture}
-              alt={project.name}
-            />
-            <Box>
-              <Box color={headerColor}>
-                <h1 className='project-title'>{project.name}</h1>
+            <Box
+              className='project-box'
+              display='flex'
+              bg={bg}
+              p={4}
+              my={4}
+              borderRadius='lg'
+            >
+              <Image
+                borderRadius='full'
+                boxSize='90px'
+                src={project.picture}
+                alt={project.name}
+              />
+              <Box>
+                <Box color={headerColor}>
+                  <h1 className='project-title'>{project.name}</h1>
+                </Box>
+                <p className='project-description'>{project.description}</p>
               </Box>
-              <p className='project-description'>{project.description}</p>
             </Box>
-          </Box>
-        </Link>
+          </Link>
+        </FadeIn>
       </Fragment>
     );
   } else {
     return (
       <Fragment>
-        <Link
-          as={RouterLink}
-          to={project.link}
-          style={{ textDecoration: 'none' }}
-        >
-          <Box
-            className='project-box'
-            display='flex'
-            bg={bg}
-            p={4}
-            my={4}
-            borderRadius='lg'
+        <FadeIn>
+          <Link
+            as={RouterLink}
+            to={project.link}
+            style={{ textDecoration: 'none' }}
           >
-            <Image
-              borderRadius='full'
-              boxSize='90px'
-              src={project.picture}
-              alt={project.name}
-            />
-            <Box>
-              <Box color={headerColor}>
-                <h1 className='project-title'>{project.name}</h1>
+            <Box
+              className='project-box'
+              display='flex'
+              bg={bg}
+              p={4}
+              my={4}
+              borderRadius='lg'
+            >
+              <Image
+                borderRadius='full'
+                boxSize='90px'
+                src={project.picture}
+                alt={project.name}
+              />
+              <Box>
+                <Box color={headerColor}>
+                  <h1 className='project-title'>{project.name}</h1>
+                </Box>
+                <p className='project-description'>{project.description}</p>
               </Box>
-              <p className='project-description'>{project.description}</p>
             </Box>
-          </Box>
-        </Link>
+          </Link>
+        </FadeIn>
       </Fragment>
     );
   }
