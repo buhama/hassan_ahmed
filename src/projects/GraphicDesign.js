@@ -1,21 +1,21 @@
 import { SimpleGrid } from '@chakra-ui/react';
 import { Image } from '@chakra-ui/image';
-import img1 from '../images/graphic-design/1_1.png';
-import img2 from '../images/graphic-design/1.png';
-import img3 from '../images/graphic-design/2.png';
-import img4 from '../images/graphic-design/3.png';
-import img5 from '../images/graphic-design/4.png';
-import img6 from '../images/graphic-design/area+51.png';
-import img7 from '../images/graphic-design/BBCR-Test_01.png';
-import img8 from '../images/graphic-design/BBCR-Test_02.png';
-import img9 from '../images/graphic-design/BBCR-Test_03.png';
-import img10 from '../images/graphic-design/BBCR-Test_04.png';
-import img11 from '../images/graphic-design/BBCR-Test_05.png';
-import img12 from '../images/graphic-design/BBCR-Test_06.png';
+import img1 from '../images/graphic-design/1_1.jpg';
+import img2 from '../images/graphic-design/1.jpg';
+import img3 from '../images/graphic-design/2.jpg';
+import img4 from '../images/graphic-design/3.jpg';
+import img5 from '../images/graphic-design/4.jpg';
+import img6 from '../images/graphic-design/area+51.jpg';
+import img7 from '../images/graphic-design/BBCR-Test_01.jpg';
+import img8 from '../images/graphic-design/BBCR-Test_02.jpg';
+import img9 from '../images/graphic-design/BBCR-Test_03.jpg';
+import img10 from '../images/graphic-design/BBCR-Test_04.jpg';
+import img11 from '../images/graphic-design/BBCR-Test_05.jpg';
+import img12 from '../images/graphic-design/BBCR-Test_06.jpg';
 import img13 from '../images/graphic-design/clubs+fair.jpg';
-import img14 from '../images/graphic-design/first+schedule.png';
-import img15 from '../images/graphic-design/messy+frost.png';
-import img16 from '../images/graphic-design/steamfest.png';
+import img14 from '../images/graphic-design/first+schedule.jpg';
+import img15 from '../images/graphic-design/messy+frost.jpg';
+import img16 from '../images/graphic-design/steamfest.jpg';
 import img17 from '../images/graphic-design/wellness_week/0.jpg';
 import img18 from '../images/graphic-design/wellness_week/1.jpg';
 import img19 from '../images/graphic-design/wellness_week/2.jpg';
@@ -51,7 +51,6 @@ const GraphicDesign = () => {
     img12,
     img14,
     img15,
-    img17,
     img6,
     img16,
   ];
@@ -70,7 +69,7 @@ const GraphicDesign = () => {
           alt='Hassan Ahmed'
         /> */}
         {images.map((img) => (
-          <Image src={img} />
+          <Image src={img} loading='lazy' />
         ))}
       </SimpleGrid>
     </div>
