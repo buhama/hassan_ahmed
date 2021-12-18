@@ -1,5 +1,6 @@
 import { SimpleGrid } from '@chakra-ui/react';
 import { Image } from '@chakra-ui/image';
+import FadeIn from 'react-fade-in/lib/FadeIn';
 import img1 from '../images/graphic-design/1_1.jpg';
 import img2 from '../images/graphic-design/1.jpg';
 import img3 from '../images/graphic-design/2.jpg';
@@ -58,18 +59,15 @@ const GraphicDesign = () => {
   return (
     <div className='design-blog'>
       {/* <Image borderRadius='full' boxSize='200px' src={photo} alt='blah Ahmed' /> */}
+
       <SimpleGrid
         minChildWidth={{ base: '50vw', md: '27vw', lg: '27vw' }}
         spacing={1}
       >
-        {/* <Image
-          borderRadius='full'
-          boxSize='200px'
-          src={photo}
-          alt='Hassan Ahmed'
-        /> */}
         {images.map((img) => (
-          <Image src={img} loading='lazy' />
+          <FadeIn>
+            <Image src={img} loading='lazy' />
+          </FadeIn>
         ))}
       </SimpleGrid>
     </div>
