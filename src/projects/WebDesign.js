@@ -42,15 +42,15 @@ const Web_Design = () => {
 
   return (
     <div className='design-blog'>
-      <SimpleGrid minChildWidth='420px' spacing={2}>
-        {images.map((image) => (
-          <FadeIn>
+      <FadeIn>
+        <SimpleGrid minChildWidth='420px' spacing={2}>
+          {images.map((image) => (
             <Link href={image.link} isExternal>
               <Image loading='lazy' src={image.img} />
             </Link>
-          </FadeIn>
-        ))}
-      </SimpleGrid>
+          ))}
+        </SimpleGrid>
+      </FadeIn>
     </div>
   );
 };
