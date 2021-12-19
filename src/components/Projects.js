@@ -24,6 +24,7 @@ const Projects = ({ setSelectedTab }) => {
 
   const headerColor = useColorModeValue('purple.800', '#E0FABD');
   const tabColor = useColorModeValue('purple', 'green');
+  const tabTextColor = useColorModeValue('white', 'black');
 
   const onChange = (index) => {
     setSelectedTab(index);
@@ -51,10 +52,30 @@ const Projects = ({ setSelectedTab }) => {
           colorScheme={tabColor}
         >
           <TabList>
-            <Tab>Software</Tab>
-            <Tab>CAD</Tab>
-            <Tab>Blog</Tab>
-            <Tab>Design</Tab>
+            <Tab
+              _hover={{ color: tabTextColor, bg: headerColor }}
+              _selected={{ color: tabTextColor, bg: headerColor }}
+            >
+              Software
+            </Tab>
+            <Tab
+              _hover={{ color: tabTextColor, bg: headerColor }}
+              _selected={{ color: tabTextColor, bg: headerColor }}
+            >
+              CAD
+            </Tab>
+            <Tab
+              _hover={{ color: tabTextColor, bg: headerColor }}
+              _selected={{ color: tabTextColor, bg: headerColor }}
+            >
+              Blog
+            </Tab>
+            <Tab
+              _hover={{ color: tabTextColor, bg: headerColor }}
+              _selected={{ color: tabTextColor, bg: headerColor }}
+            >
+              Design
+            </Tab>
           </TabList>
           <Box className='projects-box'>
             <TabPanels>
