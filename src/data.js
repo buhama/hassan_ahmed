@@ -10,6 +10,16 @@ import webdesign from './images/project-logos/webdesign.jpeg';
 
 const projects = [
   {
+    id: 11,
+    name: 'The Thing I Am Most Proud Of',
+    description:
+      'A quick write up of my amazing experience on the Campus Vibez uOttawa team.',
+    picture: graphicdesign,
+    category: 'Blog',
+    link: '/projects/The-Thing-I-Am-Most-Proud-Of',
+    external: false,
+  },
+  {
     id: 10,
     name: 'Graphic Design',
     description:

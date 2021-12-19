@@ -16,6 +16,7 @@ import CyberMonke from './projects/CyberMonke';
 import Submarine from './projects/Submarine';
 import GraphicDesign from './projects/GraphicDesign';
 import WebDesign from './projects/WebDesign';
+import CVUO from './projects/The-Thing-I-Am-Most-Proud-Of';
 
 const App = () => {
   return (
@@ -37,6 +38,10 @@ const App = () => {
           <Route path='/projects/Submarine' element={<Submarine />} />
           <Route path='/projects/GraphicDesign' element={<GraphicDesign />} />
           <Route path='/projects/WebDesign' element={<WebDesign />} />
+          <Route
+            path='/projects/The-Thing-I-Am-Most-Proud-Of'
+            element={<CVUO />}
+          />
         </Routes>
       </BrowserRouter>
       <Footer />
