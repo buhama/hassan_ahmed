@@ -1,8 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 * {
   z-index: 0;
 }
 *:focus {
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
   /* This is to remove the blue outline that comes with Chakra UI, 
   but it's not good for accessibility, but it's so ugly so what we gonna do 🤷‍♂️.  */
@@ -53,6 +61,7 @@ li {
   padding-bottom: 0.5vw;
   top: 0;
   position: fixed;
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   z-index: 1;
 }
@@ -157,10 +166,16 @@ li {
 }
 
 .project-box {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
   transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .project-box:hover {
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
   transform: scale(1.01);
 }
 
