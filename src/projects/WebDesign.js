@@ -43,7 +43,10 @@ const Web_Design = () => {
   return (
     <div className='design-blog'>
       <FadeIn>
-        <SimpleGrid minChildWidth='420px' spacing={2}>
+        <SimpleGrid
+          minChildWidth={{ base: '50vw', md: '35vw', lg: '35vw' }}
+          spacing={2}
+        >
           {images.map((image) => (
             <Link href={image.link} isExternal>
               <Image loading='lazy' src={image.img} />
