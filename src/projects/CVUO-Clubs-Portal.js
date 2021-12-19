@@ -1,8 +1,21 @@
-import { Button, Link, useColorModeValue } from '@chakra-ui/react';
+import {
+  Button,
+  Link,
+  useColorModeValue,
+  Grid,
+  GridItem,
+} from '@chakra-ui/react';
+import { Image } from '@chakra-ui/react';
 import { ArrowBackIcon } from '@chakra-ui/icons';
 import { Link as RouterLink } from 'react-router-dom';
 
 import FadeIn from 'react-fade-in/lib/FadeIn';
+
+import changes from '../images/blog-photos/clubsportal/Changes.jpg';
+import clubslist from '../images/blog-photos/clubsportal/clubslist.jpg';
+import events from '../images/blog-photos/clubsportal/Events.jpg';
+import registration from '../images/blog-photos/clubsportal/Registration.jpg';
+import vems from '../images/blog-photos/clubsportal/VEMS.jpg';
 
 const CVUO_Clubs_Portal = () => {
   const buttonColor = useColorModeValue('purple', 'green');
@@ -91,11 +104,9 @@ const CVUO_Clubs_Portal = () => {
           </p>
           <br />
           <h2>Quick Descriptions on Key Tools and Services</h2>
-          <br />
           <Link href='https://www.memberstack.com/' isExternal color='blue.500'>
             <h3>MemberStack</h3>
           </Link>
-          <br />
           <p>
             MemberStack is a no-code solution for developers to create member
             logins for their websites. It integrates really well with website
@@ -105,7 +116,6 @@ const CVUO_Clubs_Portal = () => {
           <Link href='https://zapier.com/' isExternal color='blue.500'>
             <h3>Zapier</h3>
           </Link>
-          <br />
           <p>
             Zapier is a service that can connect different apps and websites to
             make them work together. For example, if one thing happens on one
@@ -115,7 +125,6 @@ const CVUO_Clubs_Portal = () => {
           <Link href='https://www.sheet2site.com/' isExternal color='blue.500'>
             <h3>Sheet2Site</h3>
           </Link>
-          <br />
           <p>
             Sheet2site is a service that allows users to create websites from
             Google Sheets. More specifically for this use, they allow the
@@ -126,36 +135,41 @@ const CVUO_Clubs_Portal = () => {
           <Link href='https://www.jotform.com/' isExternal color='blue.500'>
             <h3>Jotform</h3>
           </Link>
-          <br />
           <p>
             Jotform is a form creation tool that doesn’t require a login from
             the user.
           </p>
           <br />
-          <h2>Clubs Portal Key Features</h2>
-          <br />
-          <h3>
-            A constantly updated Master Sheet with all the information from
-            every club.{' '}
-          </h3>
-          <br />
-          <p>
-            The Master Sheet is a Google Sheets file saved on the CVUO Google
-            Drive. It contains all the information on a club from their logo,
-            constitution, social links to their club funding details. The same
-            Google Sheet also collects Club and Association Registration
-            Applications in both English and French. All the registration is
-            conducted through Jotform, through 4 different forms, two for Club
-            Registration in both English and French and then also two for
-            Association Registration in both English and French. Every
-            submission to those 4 forms is linked to a unique tab on the Master
-            Sheet file, labeled “All Applications” and sorted by submission
-            date. This allows the CVUO executives to review each application in
-            one place and in the order that they come through. While there are
-            small differences between the Association and Club registration
-            forms, they are largely the same, and placing all applications in
-            one place is practical for review.
-          </p>
+          <Grid templateColumns='repeat(3, 1fr)' gap={6}>
+            <GridItem colSpan={2}>
+              <h2>Clubs Portal Key Features</h2>
+              <h3>
+                A constantly updated Master Sheet with all the information from
+                every club.{' '}
+              </h3>
+              <p>
+                The Master Sheet is a Google Sheets file saved on the CVUO
+                Google Drive. It contains all the information on a club from
+                their logo, constitution, social links to their club funding
+                details. The same Google Sheet also collects Club and
+                Association Registration Applications in both English and
+                French. All the registration is conducted through Jotform,
+                through 4 different forms, two for Club Registration in both
+                English and French and then also two for Association
+                Registration in both English and French. Every submission to
+                those 4 forms is linked to a unique tab on the Master Sheet
+                file, labeled “All Applications” and sorted by submission date.
+                This allows the CVUO executives to review each application in
+                one place and in the order that they come through. While there
+                are small differences between the Association and Club
+                registration forms, they are largely the same, and placing all
+                applications in one place is practical for review.
+              </p>
+            </GridItem>
+            <GridItem colSpan={1}>
+              <Image loading='lazy' src={registration}></Image>
+            </GridItem>
+          </Grid>
           <br />
           <p>
             Once the applications are reviewed by a CVUO executive and approved,
@@ -168,10 +182,11 @@ const CVUO_Clubs_Portal = () => {
             MemberStack manually.
           </p>
           <br />
+          <Image loading='lazy' src={changes}></Image>
+          <br />
           <h3>
             The ability for clubs to update their information themselves.{' '}
           </h3>
-          <br />
           <p>
             With MemberStack and Squarespace a back end on the CVUO website was
             easily made, it is the primary service that MemberStack offers. From
@@ -204,7 +219,6 @@ const CVUO_Clubs_Portal = () => {
           <h3>
             The ability for club updates to reflect on the Official Clubs List.
           </h3>
-          <br />
           <p>
             A simple solution to having the Official Clubs List be up to date
             and to reflect the club database, aka the Master Sheet, would be to
@@ -252,7 +266,6 @@ const CVUO_Clubs_Portal = () => {
           <h3>
             The ability for club updates to reflect on the Official Clubs List.
           </h3>
-          <br />
           <p>
             A simple solution to having the Official Clubs List be up to date
             and to reflect the club database, aka the Master Sheet, would be to
@@ -297,8 +310,9 @@ const CVUO_Clubs_Portal = () => {
             Sheet and MemeberStack only works one way.
           </p>
           <br />
-          <h3>Club Events Calendar That Adds Events Instantly</h3>
+          <Image loading='lazy' src={clubslist}></Image>
           <br />
+          <h3>Club Events Calendar That Adds Events Instantly</h3>
           <p>
             Sheet2site was used again. Two sheets were made, one for French and
             one for English. This time, however, there was no need for a Master
@@ -331,6 +345,8 @@ const CVUO_Clubs_Portal = () => {
             the events that pass the preliminary ID and date check and only
             publishes the French part of the submission.
           </p>
+          <br />
+          <Image loading='lazy' src={events}></Image>
           <br />
           <h3>
             A constantly updated Excel Online sheet shared with Conventions and
@@ -372,8 +388,9 @@ const CVUO_Clubs_Portal = () => {
             change.
           </p>
           <br />
-          <h3>Future Improvements</h3>
+          <Image loading='lazy' src={vems} w={'100vw'}></Image>
           <br />
+          <h3>Future Improvements</h3>
           <p>
             During the semesterly clubs’ review, many clubs end up discounting
             and must be deleted from all our files. The system doesn’t currently
