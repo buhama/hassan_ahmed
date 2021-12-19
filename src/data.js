@@ -12,7 +12,8 @@ const projects = [
   {
     id: 10,
     name: 'Graphic Design',
-    description: 'All my graphic design work. Usually for social media.',
+    description:
+      'Graphic design is my passion. Here you can check out some of the few that I’ve done over the last few years. Typically, I’m making new graphics daily - so being able to push out content fast has become something as familiar to me as breathing.',
     picture: graphicdesign,
     category: 'Design',
     link: '/projects/GraphicDesign',
@@ -21,7 +22,8 @@ const projects = [
   {
     id: 9,
     name: 'Web Design',
-    description: 'All my website design work.',
+    description:
+      'Making websites is more than just software developing. One needs an eye for design. Check out my web design work.',
     picture: webdesign,
     category: 'Design',
     link: '/projects/WebDesign',
