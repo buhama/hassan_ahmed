@@ -1,8 +1,13 @@
-import { Button, Link, useColorModeValue } from '@chakra-ui/react';
+import { Button, Link, useColorModeValue, SimpleGrid } from '@chakra-ui/react';
+import { Image } from '@chakra-ui/react';
 import { ArrowBackIcon } from '@chakra-ui/icons';
 import { Link as RouterLink } from 'react-router-dom';
 
 import FadeIn from 'react-fade-in/lib/FadeIn';
+
+import photo1 from '../images/blog-photos/cybermonke/Cyber-Limb-2.jpg';
+import photo2 from '../images/blog-photos/cybermonke/Cyber-Limb-3.jpg';
+import photo3 from '../images/blog-photos/cybermonke/Cyber-Limb-4.jpg';
 
 const CyberMonke = () => {
   const buttonColor = useColorModeValue('purple', 'green');
@@ -23,7 +28,7 @@ const CyberMonke = () => {
           <h1>CyberMonkE - IBM Design Challenge</h1>
         </div>
         <div className='blog-body'>
-          {/* TODO: Add Blog Images */} <h2>Introduction</h2> <br />
+          {/* TODO: Add Blog Images */} <h2>Introduction</h2>
           <p>
             The first-ever uOttawa Designathon happened in Feb. 2021. It was a
             3-day event where competitors from all over the world created 3D
@@ -42,13 +47,13 @@ const CyberMonke = () => {
             <b>2nd</b> for the <b>IBM Design Challenge</b>.
           </p>
           <br />
-          <h2>Design Criteria</h2>
+          <Image loading='lazy' src={photo3}></Image>
           <br />
+          <h2>Design Criteria</h2>
           <p>
             The IBM Design Challenge was to design an exoskeleton for a human
             arm, that met the following specifications:
           </p>
-          <br />
           <ul>
             <li>Lightweight </li>
             <li>Enhanced strength to superhuman levels</li>
@@ -57,8 +62,15 @@ const CyberMonke = () => {
             <li>Accessible to users with physical disabilities</li>
           </ul>
           <br />
-          <h2>Solution</h2>
+          <SimpleGrid
+            minChildWidth={{ base: '50vw', md: '15vw', lg: '15vw' }}
+            spacing={2}
+          >
+            <Image loading='lazy' src={photo1}></Image>
+            <Image loading='lazy' src={photo2}></Image>
+          </SimpleGrid>
           <br />
+          <h2>Solution</h2>
           <p>
             Our solution used <b>Nylon Fibers</b> twisted in coils. When heated,
             the coils retracted, behaving similarly to muscle fibers. We decided
@@ -105,7 +117,6 @@ const CyberMonke = () => {
           </p>
           <br />
           <h2>Conclusion</h2>
-          <br />
           <p>
             Overall the CyberLimb provided a unique solution to the human arm
             exoskeleton concept, using nylon fibers very unique property when

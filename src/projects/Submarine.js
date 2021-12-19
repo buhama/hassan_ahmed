@@ -1,8 +1,13 @@
-import { Button, Link, useColorModeValue } from '@chakra-ui/react';
+import { Button, Link, useColorModeValue, SimpleGrid } from '@chakra-ui/react';
+import { Image } from '@chakra-ui/image';
 import { ArrowBackIcon } from '@chakra-ui/icons';
 import { Link as RouterLink } from 'react-router-dom';
 
 import FadeIn from 'react-fade-in/lib/FadeIn';
+
+import param from '../images/blog-photos/capstone/parametrization.jpg';
+import subdesign from '../images/blog-photos/capstone/Sub-proposed-design.jpg';
+import subdesign2 from '../images/blog-photos/capstone/Sub-proposed-design-2.jpg';
 
 const Submarine = () => {
   const buttonColor = useColorModeValue('purple', 'green');
@@ -23,7 +28,7 @@ const Submarine = () => {
           <h1>Commercial Submarine - Capstone</h1>
         </div>
         <div className='blog-body'>
-          {/* TODO: Add Blog Images */} <h2>Design Criteria</h2> <br />
+          {/* TODO: Add Blog Images */} <h2>Design Criteria</h2>
           <ul>
             <li>Cost-efficient</li>
             <li>Depth rating: 330m to 1000m </li>
@@ -31,7 +36,6 @@ const Submarine = () => {
           </ul>
           <br />
           <h2>Introduction</h2>
-          <br />
           <p>
             The final capstone project is a major milestone for all aspiring
             engineering students. It forces us to use all of the skills learned
@@ -53,10 +57,16 @@ const Submarine = () => {
             <b>2nd</b> for the <b>IBM Design Challenge</b>.
           </p>
           <br />
+          <SimpleGrid
+            minChildWidth={{ base: '50vw', md: '15vw', lg: '15vw' }}
+            spacing={2}
+          >
+            <Image loading='lazy' src={subdesign}></Image>
+            <Image loading='lazy' src={subdesign2}></Image>
+          </SimpleGrid>
+          <br />
           <h2>Design Criteria</h2>
-          <br />
           <h3>Brief Design Summary</h3>
-          <br />
           <p>
             Two translucent acrylic hulls make up the majority of the structure
             of the submarine. Trying to achieve such high speeds of 6 knots,
@@ -82,7 +92,6 @@ const Submarine = () => {
           </p>
           <br />
           <h3>Parametrization</h3>
-          <br />
           <p>
             Parametrization was important to the design to allow for clients to
             input desired speeds, depths, and dive duration. Each input affected
@@ -92,8 +101,9 @@ const Submarine = () => {
             calculations with each changing input.
           </p>
           <br />
-          <h2>Conclusion</h2>
+          <Image loading='lazy' src={param}></Image>
           <br />
+          <h2>Conclusion</h2>
           <p>
             Finally, the submarine design allowed for a cost-effective, safe,
             and efficient submersible for commercial uses such as tourism,
