@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Profile from './Profile';
 import Projects from './Projects';
 
@@ -6,6 +6,11 @@ import { Box, Center, Grid, GridItem } from '@chakra-ui/react';
 
 const Main = () => {
   const [selectedTab, setSelectedTab] = useState(0);
+
+  useEffect(() => {
+    document.title = 'Hassan Ahmed | Portfolio';
+  }, []);
+
   return (
     <Grid templateColumns='repeat(10, 1fr)' gap={1} className='main'>
       <GridItem colSpan={{ base: 10, md: 4, lg: 4 }}>

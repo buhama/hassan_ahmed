@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { SimpleGrid } from '@chakra-ui/react';
 import { Image } from '@chakra-ui/image';
 import FadeIn from 'react-fade-in/lib/FadeIn';
@@ -55,6 +56,10 @@ const GraphicDesign = () => {
     img6,
     img16,
   ];
+
+  useEffect(() => {
+    document.title = 'Graphic Design | Hassan Ahmed';
+  });
 
   return (
     <div className='design-blog'>

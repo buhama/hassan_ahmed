@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Button, Link, useColorModeValue } from '@chakra-ui/react';
 import { ArrowBackIcon } from '@chakra-ui/icons';
 import { Link as RouterLink } from 'react-router-dom';
@@ -6,6 +7,10 @@ import FadeIn from 'react-fade-in/lib/FadeIn';
 
 const How_The_Pandemic_Forced_Event_Innovation = () => {
   const buttonColor = useColorModeValue('purple', 'green');
+
+  useEffect(() => {
+    document.title = 'How The Pandemic Forced Event Innovation | Hassan Ahmed';
+  }, []);
 
   return (
     <div className='blog'>

@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Button, Link, useColorModeValue } from '@chakra-ui/react';
 import { ArrowBackIcon } from '@chakra-ui/icons';
 import { Link as RouterLink } from 'react-router-dom';
@@ -6,6 +7,10 @@ import FadeIn from 'react-fade-in/lib/FadeIn';
 
 const The_Thing_I_Am_Most_Proud_Of = () => {
   const buttonColor = useColorModeValue('purple', 'green');
+
+  useEffect(() => {
+    document.title = 'The Thing I Am Most Proud Of | Hassan Ahmed';
+  }, []);
 
   return (
     <div className='blog'>

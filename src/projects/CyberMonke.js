@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Button, Link, useColorModeValue, SimpleGrid } from '@chakra-ui/react';
 import { Image } from '@chakra-ui/react';
 import { ArrowBackIcon } from '@chakra-ui/icons';
@@ -11,6 +12,10 @@ import photo3 from '../images/blog-photos/cybermonke/Cyber-Limb-4.jpg';
 
 const CyberMonke = () => {
   const buttonColor = useColorModeValue('purple', 'green');
+
+  useEffect(() => {
+    document.title = 'CyberMonke | Hassan Ahmed';
+  }, []);
 
   return (
     <div className='blog'>

@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import {
   Button,
   Link,
@@ -19,6 +20,10 @@ import vems from '../images/blog-photos/clubsportal/VEMS.jpg';
 
 const CVUO_Clubs_Portal = () => {
   const buttonColor = useColorModeValue('purple', 'green');
+
+  useEffect(() => {
+    document.title = 'CVUO Clubs Portal | Hassan Ahmed';
+  }, []);
 
   return (
     <div className='blog'>

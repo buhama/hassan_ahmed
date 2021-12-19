@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Button, Link, useColorModeValue, SimpleGrid } from '@chakra-ui/react';
 import { Image } from '@chakra-ui/image';
 import { ArrowBackIcon } from '@chakra-ui/icons';
@@ -11,6 +12,10 @@ import subdesign2 from '../images/blog-photos/capstone/Sub-proposed-design-2.jpg
 
 const Submarine = () => {
   const buttonColor = useColorModeValue('purple', 'green');
+
+  useEffect(() => {
+    document.title = 'Submarine | Hassan Ahmed';
+  }, []);
 
   return (
     <div className='blog'>

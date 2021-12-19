@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { SimpleGrid, Image, Link } from '@chakra-ui/react';
 import FadeIn from 'react-fade-in/lib/FadeIn';
 import img1 from '../images/web-design/1.jpg';
@@ -39,6 +40,10 @@ const Web_Design = () => {
       link: 'https://www.thatmakergirl.ca/',
     },
   ];
+
+  useEffect(() => {
+    document.title = 'Web Design | Hassan Ahmed';
+  }, []);
 
   return (
     <div className='design-blog'>
