@@ -1,12 +1,13 @@
 import tothepersonreadingthis from './images/project-logos/tothepersonreadingthis.png';
 import slatrophy from './images/project-logos/slatrophy.png';
-import cvuologo from './images/project-logos/cvuoclubsportal.png';
+import portallogo from './images/project-logos/cvuoclubsportal.png';
 import cherami from './images/project-logos/cherami.jpg';
 import lifeinweeks from './images/project-logos/lifeinweeks.jpg';
 import cybermonke from './images/project-logos/cybermonke.png';
 import submarine from './images/project-logos/submarine.png';
 import graphicdesign from './images/project-logos/graphicdesign.png';
 import webdesign from './images/project-logos/webdesign.jpeg';
+import cvuologo from './images/project-logos/cvuologo.png';
 
 const projects = [
   {
@@ -14,7 +15,7 @@ const projects = [
     name: 'The Thing I Am Most Proud Of',
     description:
       'A quick write up of my amazing experience on the Campus Vibez uOttawa team.',
-    picture: graphicdesign,
+    picture: cvuologo,
     category: 'Blog',
     link: '/projects/The-Thing-I-Am-Most-Proud-Of',
     external: false,
@@ -63,7 +64,7 @@ const projects = [
     id: 2,
     name: 'CVUO Clubs Portal',
     description: 'The details and motivations behind the CVUO Clubs Portal.',
-    picture: cvuologo,
+    picture: portallogo,
     category: 'Blog',
     link: '/projects/CVUO-Clubs-Portal',
     external: false,
