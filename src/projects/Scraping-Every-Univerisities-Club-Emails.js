@@ -63,7 +63,10 @@ const Scraping_Every_Universities_Club_Emails = () => {
             List is the one I put together, but I did use a third-party plugin
             to create the directory, so this took a little bit of looking still.
             For reference the clubs list is hosted on CVUO’s website at
-            <a href='www.cvuo.ca/clubs-list'> www.cvuo.ca/clubs-list.</a>{' '}
+            <Link isExternal color='blue.500' href='www.cvuo.ca/clubs-list'>
+              {' '}
+              www.cvuo.ca/clubs-list.
+            </Link>{' '}
           </p>
           <br />
           <p>
@@ -83,18 +86,26 @@ const Scraping_Every_Universities_Club_Emails = () => {
           <p>
             I also found this kinda cool but the webpage where the uOttawa Clubs
             list is actually hosted is here:{' '}
-            <a href='https://sheet2site-staging.herokuapp.com/api/v3/index.php?key=1EF6n8IGo4H8-2eL3iMHVItLdSGESIniTwZTEkz1HCRM&g=1&e=1&e=1'>
+            <Link
+              isExternal
+              color='blue.500'
+              href='https://sheet2site-staging.herokuapp.com/api/v3/index.php?key=1EF6n8IGo4H8-2eL3iMHVItLdSGESIniTwZTEkz1HCRM&g=1&e=1&e=1'
+            >
               {' '}
               https://sheet2site-staging.herokuapp.com/api/v3/index.php?key=1EF6n8IGo4H8-2eL3iMHVItLdSGESIniTwZTEkz1HCRM&g=1&e=1&e=1
-            </a>
+            </Link>
           </p>
           <br />
           <p>
             But that page is also making a request to this page:{' '}
-            <a href='https://sheet2site-staging.herokuapp.com/api/v3/load_morenew.php/?key=1EF6n8IGo4H8-2eL3iMHVItLdSGESIniTwZTEkz1HCRM&template=Business%20Template&filter=&search=&e=1&is_filter_multi=false&domain=&length=99&page=0'>
+            <Link
+              isExternal
+              color='blue.500'
+              href='https://sheet2site-staging.herokuapp.com/api/v3/load_morenew.php/?key=1EF6n8IGo4H8-2eL3iMHVItLdSGESIniTwZTEkz1HCRM&template=Business%20Template&filter=&search=&e=1&is_filter_multi=false&domain=&length=99&page=0'
+            >
               {' '}
               https://sheet2site-staging.herokuapp.com/api/v3/load_morenew.php/?key=1EF6n8IGo4H8-2eL3iMHVItLdSGESIniTwZTEkz1HCRM&template=Business%20Template&filter=&search=&e=1&is_filter_multi=false&domain=&length=99&page=0
-            </a>
+            </Link>
           </p>
           <br />
           <p>
@@ -108,10 +119,14 @@ const Scraping_Every_Universities_Club_Emails = () => {
             From what I gathered, Carleton, or rather CUSA Clubs, made their
             website using WordPress and are using a WordPress plugin for their
             club’s directory. Their directory can be found here:
-            <a href='https://www.cusaclubs.ca/directory/'>
+            <Link
+              isExternal
+              color='blue.500'
+              href='https://www.cusaclubs.ca/directory/'
+            >
               {' '}
               https://www.cusaclubs.ca/directory/.
-            </a>{' '}
+            </Link>{' '}
           </p>
           <br />
           <p>
@@ -147,10 +162,14 @@ const Scraping_Every_Universities_Club_Emails = () => {
           <p>
             York was easy; they had all their clubs listed in a nice HTML table
             with the email on the last column. You can see it here:
-            <a href=' http://www.yfs.ca/clubsdirectory'>
+            <Link
+              isExternal
+              color='blue.500'
+              href=' http://www.yfs.ca/clubsdirectory'
+            >
               {' '}
               http://www.yfs.ca/clubsdirectory.
-            </a>{' '}
+            </Link>{' '}
           </p>
           <br />
           <p>
@@ -170,10 +189,14 @@ const Scraping_Every_Universities_Club_Emails = () => {
             For UofT, they have a much bigger list of clubs on the official
             universities site as opposed to their student unions, so I went with
             that. You can find it here:
-            <a href=' https://www.ulife.utoronto.ca/organizations/list/page/'>
+            <Link
+              isExternal
+              color='blue.500'
+              href=' https://www.ulife.utoronto.ca/organizations/list/page/'
+            >
               {' '}
               https://www.ulife.utoronto.ca/organizations/list/page/
-            </a>
+            </Link>
           </p>
           <br />
           <p>
@@ -203,10 +226,14 @@ const Scraping_Every_Universities_Club_Emails = () => {
           <p>
             These three are put together because their clubs directories are all
             made by one company called Campus Labs. You can see Ryerson’s here:
-            <a href='https://connectru.ryerson.ca/organizations'>
+            <Link
+              isExternal
+              color='blue.500'
+              href='https://connectru.ryerson.ca/organizations'
+            >
               {' '}
               https://connectru.ryerson.ca/organizations
-            </a>
+            </Link>
             , the others look and behave exactly the same.{' '}
           </p>
           <br />
@@ -235,10 +262,14 @@ const Scraping_Every_Universities_Club_Emails = () => {
             unique ID that goes into the URL for each of the clubs, meaning I
             didn’t have to get those URLs myself, which was nice. You can see
             Ryerson’s JSON file if you want here:
-            <a href='https://connectru.ryerson.ca/api/discovery/search/organizations?orderBy%5B0%5D=UpperName%20asc&top=1000&filter=&query=&skip=0'>
+            <Link
+              isExternal
+              color='blue.500'
+              href='https://connectru.ryerson.ca/api/discovery/search/organizations?orderBy%5B0%5D=UpperName%20asc&top=1000&filter=&query=&skip=0'
+            >
               {' '}
               https://connectru.ryerson.ca/api/discovery/search/organizations?orderBy%5B0%5D=UpperName%20asc&top=1000&filter=&query=&skip=0
-            </a>
+            </Link>
             . The interesting part was also adding 'top=1000' to show a max list
             of 1000 clubs. It defaults to something like 20, which is not
             helpful.
@@ -280,10 +311,14 @@ const Scraping_Every_Universities_Club_Emails = () => {
           <br />
           <p>
             {' '}
-            <a href='https://www.brockbusu.ca/involvement/clubs/directory/'>
+            <Link
+              isExternal
+              color='blue.500'
+              href='https://www.brockbusu.ca/involvement/clubs/directory/'
+            >
               {' '}
               https://www.brockbusu.ca/involvement/clubs/directory/
-            </a>
+            </Link>
           </p>
           <br />
           <p>
