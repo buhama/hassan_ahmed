@@ -332,6 +332,21 @@ const Scraping_Every_Universities_Club_Emails = () => {
             easily.{' '}
           </p>
           <br />
+          <h2>Algoma</h2>
+          <p>
+            Algo University's Student Union has a list of clubs on their site
+            found here:{' '}
+            <Link
+              isExternal
+              color='blue.500'
+              href='https://ausu82.ca/get-involved/clubs-societies'
+            >
+              {' '}
+              https://ausu82.ca/get-involved/clubs-societies
+            </Link>{' '}
+            but literally no emails available. Tried looking at the universities
+            site and was even more unlucky. Nothing much we can do about that.{' '}
+          </p>
         </div>
       </FadeIn>
     </div>
