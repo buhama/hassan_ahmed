@@ -71,13 +71,37 @@ const Scraping_Every_Universities_Club_Emails = () => {
             code block, with the actual directory hosted on a public web page,
             which was easy to find. Just had to right click the frame and hit
             “View Frame Source” (thank you Google Chrome). From then on, I ran
-            Cheerio with Node.js and Express to extract emails, which were the
-            only &lt;a&gt; tags within each club’s info, which all had unique
-            class names. So, with Cheerio, I first told it to find that unique
-            class name, then find the &lt;a&gt; tag within that class name and
-            then get the href from the &lt;a&gt; tag, and to do that for every
-            element with said class name and voila I had all the emails.
+            <b> Cheerio</b> with <b>Node.js </b>and <b>Express</b> to extract
+            emails, which were the only &lt;a&gt; tags within each club’s info,
+            which all had unique class names. So, with <b>Cheerio</b>, I first
+            told it to find that unique class name, then find the &lt;a&gt; tag
+            within that class name and then get the href from the &lt;a&gt; tag,
+            and to do that for every element with said class name and voila I
+            had all the emails.
           </p>
+          <br />
+          <p>
+            I also found this kinda cool but the webpage where the uOttawa Clubs
+            list is actually hosted is here:{' '}
+            <a href='https://sheet2site-staging.herokuapp.com/api/v3/index.php?key=1EF6n8IGo4H8-2eL3iMHVItLdSGESIniTwZTEkz1HCRM&g=1&e=1&e=1'>
+              {' '}
+              https://sheet2site-staging.herokuapp.com/api/v3/index.php?key=1EF6n8IGo4H8-2eL3iMHVItLdSGESIniTwZTEkz1HCRM&g=1&e=1&e=1
+            </a>
+          </p>
+          <br />
+          <p>
+            But that page is also making a request to this page:{' '}
+            <a href='https://sheet2site-staging.herokuapp.com/api/v3/load_morenew.php/?key=1EF6n8IGo4H8-2eL3iMHVItLdSGESIniTwZTEkz1HCRM&template=Business%20Template&filter=&search=&e=1&is_filter_multi=false&domain=&length=99&page=0'>
+              {' '}
+              https://sheet2site-staging.herokuapp.com/api/v3/load_morenew.php/?key=1EF6n8IGo4H8-2eL3iMHVItLdSGESIniTwZTEkz1HCRM&template=Business%20Template&filter=&search=&e=1&is_filter_multi=false&domain=&length=99&page=0
+            </a>
+          </p>
+          <br />
+          <p>
+            The number at the end is the number of pages for the whole
+            directory, in total there are 3. I wasn't able to get all of them to
+            show on one page unfortunately.
+          </p>{' '}
           <br />
           <h2>Carleton</h2>
           <p>
@@ -93,15 +117,15 @@ const Scraping_Every_Universities_Club_Emails = () => {
           <p>
             The issue here was that each club’s email wasn’t listed on the
             directory until you clicked on the club, and it opened a new page
-            with all the info. I did consider switching to using Puppeteer,
-            which would let me go on their directory and then click on each
-            club, but I wanted to keep using Cheerio for now (don’t worry, we’ll
-            be forced to use Puppeteer a little bit later). What I noticed is
-            that while there a unique and random ID in the URLs of each of the
-            Clubs pages, the ID didn’t go higher than 3000. So I decided to
-            create an array of URLs with the template of
-            https://www.cusaclubs.ca/?post_type=job_listing&p= and added every
-            number from 1800 – 3000 after the domain.
+            with all the info. I did consider switching to using{' '}
+            <b>Puppeteer</b>, which would let me go on their directory and then
+            click on each club, but I wanted to keep using <b>Cheerio</b> for
+            now (don’t worry, we’ll be forced to use <b>Puppeteer</b> a little
+            bit later). What I noticed is that while there a unique and random
+            ID in the URLs of each of the Clubs pages, the ID didn’t go higher
+            than 3000. So I decided to create an array of URLs with the template
+            of https://www.cusaclubs.ca/?post_type=job_listing&p= and added
+            every number from 1800 – 3000 after the domain.
           </p>
           <br />
           <p>
@@ -137,8 +161,8 @@ const Scraping_Every_Universities_Club_Emails = () => {
             everything except the email is inside an &lt;a&gt; tag. So first I
             got all the contact details, then got all the contact details that
             were inside an &lt;a&gt; tag and then removed the second part from
-            the first part with simple JavaScript string manipulation and was
-            left with just the email.{' '}
+            the first part with simple <b>JavaScript</b> string manipulation and
+            was left with just the email.{' '}
           </p>
           <br />
           <h2>UofT</h2>
@@ -156,8 +180,8 @@ const Scraping_Every_Universities_Club_Emails = () => {
             Big issue with UofT is that like Carleton, the have individual pages
             for each club with unique IDs in the URL. But with UofT their unique
             IDs are 6 digits long, so just force searching every possible URL
-            would be silly. I still wanted to continue using Cheerio so my
-            strategy ended up being to get each clubs URL from the directory,
+            would be silly. I still wanted to continue using <b>Cheerio</b> so
+            my strategy ended up being to get each clubs URL from the directory,
             saving all those URLs in an array and then finding the email in each
             of those URLS using the same approach as before.{' '}
           </p>
@@ -190,15 +214,16 @@ const Scraping_Every_Universities_Club_Emails = () => {
             This was our first big road block, because I believe Campus Labs
             uses React.js for their sites, which utilizes Client-Side rendering
             and if you try to view the page source, you pretty much get nothing.
-            Which makes it impossible to scrape using Cheerio.{' '}
+            Which makes it impossible to scrape using <b>Cheerio</b>.{' '}
           </p>
           <br />
           <p>
             At first, I had given up because I had my fun but then I got random
-            1am motivation and installed Puppeteer. Puppeteer lets me open up a
-            browser and inspect element the HTML, which is just what I need to
-            scrape React based sites. Also, a little shout out to my original
-            goal of wanting to scrape Instagram, which is also a React site.{' '}
+            1am motivation and installed <b>Puppeteer</b>. <b>Puppeteer</b> lets
+            me open up a browser and inspect element the HTML, which is just
+            what I need to scrape React based sites. Also, a little shout out to
+            my original goal of wanting to scrape Instagram, which is also a
+            React site.{' '}
           </p>
           <br />
           <p>
@@ -221,7 +246,8 @@ const Scraping_Every_Universities_Club_Emails = () => {
           <br />
           <p>
             I used the Website Keys to create an array with all the URLs I
-            wanted to visit with Puppeteer and on those URLs I had Puppeteer
+            wanted to visit with <b>Puppeteer</b> and on those URLs I had{' '}
+            <b>Puppeteer</b>
             find the correct class name where the email was nested. But another
             roadblock was that the email itself didn’t have a unique class name
             and it also wasn’t inside an &lt;a&gt; tag, so I couldn’t think of a
@@ -231,13 +257,13 @@ const Scraping_Every_Universities_Club_Emails = () => {
           </p>
           <br />
           <p>
-            Another issue was that since I was using synchronous JavaScript –
-            Node JS didn’t like me making so many Promises (or requests for
-            those less JS inclined) simultaneously. I even tried parallel
-            processing, but it just ended up taking too much memory. So I opted
-            instead for switching to an asynchronous function, which takes a
-            long time to get all the emails, but it’s not a big deal from what
-            I’m trying to do here.{' '}
+            Another issue was that since I was using synchronous{' '}
+            <b>JavaScript</b> & <b>Node JS</b> didn’t like me making so many
+            Promises (or requests for those less JS inclined) simultaneously. I
+            even tried parallel processing, but it just ended up taking too much
+            memory. So I opted instead for switching to an asynchronous
+            function, which takes a long time to get all the emails, but it’s
+            not a big deal from what I’m trying to do here.{' '}
           </p>
           <br />
           <p>
