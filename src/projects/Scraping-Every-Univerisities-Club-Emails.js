@@ -85,6 +85,7 @@ const Scraping_Every_Universities_Club_Emails = () => {
             website using WordPress and are using a WordPress plugin for their
             club’s directory. Their directory can be found here:
             <a href='https://www.cusaclubs.ca/directory/'>
+              {' '}
               https://www.cusaclubs.ca/directory/.
             </a>{' '}
           </p>
@@ -179,8 +180,9 @@ const Scraping_Every_Universities_Club_Emails = () => {
             These three are put together because their clubs directories are all
             made by one company called Campus Labs. You can see Ryerson’s here:
             <a href='https://connectru.ryerson.ca/organizations'>
+              {' '}
               https://connectru.ryerson.ca/organizations
-            </a>{' '}
+            </a>
             , the others look and behave exactly the same.{' '}
           </p>
           <br />
@@ -209,6 +211,7 @@ const Scraping_Every_Universities_Club_Emails = () => {
             didn’t have to get those URLs myself, which was nice. You can see
             Ryerson’s JSON file if you want here:
             <a href='https://connectru.ryerson.ca/api/discovery/search/organizations?orderBy%5B0%5D=UpperName%20asc&top=1000&filter=&query=&skip=0'>
+              {' '}
               https://connectru.ryerson.ca/api/discovery/search/organizations?orderBy%5B0%5D=UpperName%20asc&top=1000&filter=&query=&skip=0
             </a>
             . The interesting part was also adding 'top=1000' to show a max list
@@ -248,6 +251,7 @@ const Scraping_Every_Universities_Club_Emails = () => {
             Brock was pretty easy, they had all their clubs listed on one page
             which you can see here:
             <a href='https://www.brockbusu.ca/involvement/clubs/directory/'>
+              {' '}
               https://www.brockbusu.ca/involvement/clubs/directory/
             </a>
           </p>
