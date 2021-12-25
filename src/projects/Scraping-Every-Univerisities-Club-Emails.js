@@ -247,13 +247,13 @@ const Scraping_Every_Universities_Club_Emails = () => {
           <p>
             I used the Website Keys to create an array with all the URLs I
             wanted to visit with <b>Puppeteer</b> and on those URLs I had{' '}
-            <b>Puppeteer</b>
-            find the correct class name where the email was nested. But another
-            roadblock was that the email itself didn’t have a unique class name
-            and it also wasn’t inside an &lt;a&gt; tag, so I couldn’t think of a
-            smart way to just get the email. So, instead I got everything from
-            the Clubs Info section and then used Regex to filter out anything
-            that looked like an email. Which ended up working perfectly.{' '}
+            <b>Puppeteer</b> find the correct class name where the email was
+            nested. But another roadblock was that the email itself didn’t have
+            a unique class name and it also wasn’t inside an &lt;a&gt; tag, so I
+            couldn’t think of a smart way to just get the email. So, instead I
+            got everything from the Clubs Info section and then used Regex to
+            filter out anything that looked like an email. Which ended up
+            working perfectly.{' '}
           </p>
           <br />
           <p>
@@ -276,6 +276,10 @@ const Scraping_Every_Universities_Club_Emails = () => {
           <p>
             Brock was pretty easy, they had all their clubs listed on one page
             which you can see here:
+          </p>
+          <br />
+          <p>
+            {' '}
             <a href='https://www.brockbusu.ca/involvement/clubs/directory/'>
               {' '}
               https://www.brockbusu.ca/involvement/clubs/directory/
