@@ -17,6 +17,7 @@ import Submarine from './projects/Submarine';
 import GraphicDesign from './projects/GraphicDesign';
 import WebDesign from './projects/WebDesign';
 import CVUO from './projects/The-Thing-I-Am-Most-Proud-Of';
+import Scraping from './projects/Scraping-Every-Univerisities-Club-Emails';
 
 const App = () => {
   return (
@@ -41,6 +42,10 @@ const App = () => {
           <Route
             path='/projects/The-Thing-I-Am-Most-Proud-Of'
             element={<CVUO />}
+          />
+          <Route
+            path='/projects/Scraping-Every-Univerisities-Club-Emails'
+            element={<Scraping />}
           />
         </Routes>
       </BrowserRouter>
