@@ -258,6 +258,10 @@ li {
   text-decoration: underline;
 }
 
+.blog a {
+  color: blue;
+}
+
 .blog ul {
   padding-left: 40px;
 }
