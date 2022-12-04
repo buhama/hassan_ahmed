@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Heading, List, ListItem } from '@chakra-ui/react';
+import { Heading } from '@chakra-ui/react';
 
 const ChatGPT = () => {
   useEffect(() => {
