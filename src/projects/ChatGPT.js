@@ -8,9 +8,12 @@ const ChatGPT = () => {
 
   return (
     <div className='blog'>
+        <div className='blog-title'>
       <Heading as='h1' size='xl'>
         ChatGPT: The Future of Productivity
       </Heading>
+      </div>
+      <div className='blog-body'>
       <p>
         As a large language model trained by OpenAI, I am excited about the
         potential of ChatGPT to revolutionize the way we approach productivity.
@@ -22,8 +25,8 @@ const ChatGPT = () => {
       <Heading as='h2' size='lg'>
         The Benefits of ChatGPT
       </Heading>
-      <List>
-        <ListItem>
+      <ul>
+        <li>
           <strong>
             Quick and accurate processing of large amounts of information
           </strong>
@@ -34,8 +37,8 @@ const ChatGPT = () => {
           especially useful for individuals who need to quickly and accurately
           process large amounts of data, such as startup founders and other
           business professionals.
-        </ListItem>
-        <ListItem>
+        </li>
+        <li>
           <strong>Adaptability to the needs of users</strong>: Unlike
           traditional search engines, which often return a wide range of results
           that may not be relevant to the user's query, this technology is able
@@ -45,8 +48,8 @@ const ChatGPT = () => {
           individuals who have unique and specific information needs, such as
           startup founders who are looking for information that is relevant to
           their business.
-        </ListItem>
-        <ListItem>
+        </li>
+        <li>
           <strong>Personalization</strong>: ChatGPT offers a level of
           personalization that is unmatched by other productivity tools. With
           the ability to learn and adapt to the needs of its users, ChatGPT is able to provide a truly personalized experience that is tailored to each individual user. This means that users can expect to
@@ -55,8 +58,8 @@ const ChatGPT = () => {
           for individuals who are pressed for time and need to be able to quickly and
           easily access the information they need in order to make important decisions,
           such as startup founders who are constantly balancing multiple tasks and responsibilities.
-        </ListItem>
-    </List>
+        </li>
+    </ul>
     <Heading as='h2' size='lg'>
     The Future of ChatGPT
     </Heading>
@@ -66,8 +69,8 @@ const ChatGPT = () => {
     improve, we can expect to see even more impressive capabilities and
     applications.
     </p>
-    <List>
-    <ListItem>
+    <ul>
+    <li>
         <strong>
         Potential connection to the internet and remaining free
         </strong>
@@ -79,8 +82,8 @@ const ChatGPT = () => {
         easily. This would be especially beneficial for startups, who often have
         to process large amounts of data and make quick decisions in order to
         stay competitive and grow their business.
-    </ListItem>
-    <ListItem>
+    </li>
+    <li>
         <strong>
         Potential integration with other productivity tools  </strong> : As ChatGPT continues to evolve and improve, we can expect to see it
     integrated with other productivity tools and applications. This would allow
@@ -90,8 +93,8 @@ const ChatGPT = () => {
     and other business professionals who rely on a variety of tools and
     applications to manage their day-to-day operations.
    
-    </ListItem>
-    <ListItem>
+    </li>
+    <li>
     <strong>
     Continued evolution and improvement
     </strong>
@@ -102,8 +105,8 @@ const ChatGPT = () => {
     we can expect to see it become an even more powerful and valuable tool
     for anyone looking to increase their productivity and streamline their
     workflows.
-    </ListItem>
-    </List>
+    </li>
+    </ul>
     <Heading as='h2' size='lg'>
     Try ChatGPT Today
     </Heading>
@@ -117,6 +120,7 @@ const ChatGPT = () => {
     productivity and achieve your goals faster and more easily than ever
     before.
     </p>
+    </div>
     </div>
     );
     };
