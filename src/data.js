@@ -109,6 +109,16 @@ const projects = [
     link: '/projects/Submarine',
     external: false,
   },
+  {
+    id: 6,
+    name: 'ChatGPT: The Future of Productivity',
+    description:
+      'ChatGPT is a large language model trained by OpenAI that has the potential to revolutionize productivity with its quick processing of large amounts of information, adaptability to users\' needs, and personalization. It has the potential to become a valuable tool for increasing productivity. As it continues to improve, we can expect more impressive capabilities and applications.',
+    picture: submarine,
+    category: 'Blog',
+    link: '/projects/chatgpt-blog',
+    external: false,
+  },
 ];
 
 export default projects;
